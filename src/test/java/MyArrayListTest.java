@@ -181,4 +181,32 @@ public class MyArrayListTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+    @Test
+    public <T> void getTest(){
+        //Given
+        T expected = (T) "A";
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        T actual = (T) myArrayList.get(0);
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public <T> void getTest2(){
+        //Given
+        T expected = (T) "B";
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        T actual = (T) myArrayList.get(2);
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }

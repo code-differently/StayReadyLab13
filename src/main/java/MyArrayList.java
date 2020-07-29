@@ -108,4 +108,7 @@ public class MyArrayList<T> {
             this.currentSize = this.myArray.length;
         }
     }
+    public T get(int index){
+        return this.myArray[index];
+    }
 }
