@@ -2,7 +2,6 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.reflect.Type;
-import java.util.ArrayList;
 
 public class MyArrayListTest {
 
@@ -238,4 +237,50 @@ public class MyArrayListTest {
         // Then
         Assert.assertEquals(expected,actual);
     }
+
+    @Test
+    public void addAtIndexTest(){
+        // Given
+        int expected=6;
+
+        // When
+        MyArrayList<Integer> test=new MyArrayList<Integer>();
+        test.add(5);
+        test.add(3);
+        test.add(6,0);
+        int actual=test.get(0);
+
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void addAtIndexTest2(){
+        // Given
+        int expected=6;
+
+        // When
+        MyArrayList<Integer> test=new MyArrayList<Integer>();
+        test.add(5);
+        test.add(3);
+        test.add(6,8);
+        int actual=test.get(1);
+
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void addAtIndexTest3(){
+        // Given
+        String expected="YUP";
+
+        // When
+        MyArrayList<String> test=new MyArrayList<String>(5);
+        test.add("YUP",3);
+        String actual=test.get(3);
+
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+
 }

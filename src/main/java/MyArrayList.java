@@ -57,13 +57,14 @@ public class MyArrayList<T>{
             this.position=0;
 
             for (int i = 0; i <newArray.length ; i++) {
-                if(this.position==index)
+                if(i==index)
                     newArray[i]=item;
                 else {
-                    newArray[position] = this.array[i];
-                    this.position++;
+                    newArray[i] = this.array[position];
+                    position++;
                 }
             }
+            this.array=newArray;
         }
         else
             throw new IndexOutOfBoundsException();
