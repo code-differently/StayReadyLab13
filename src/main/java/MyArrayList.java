@@ -54,23 +54,42 @@ public class MyArrayList<T>{
     public void add(T item,int index){
         if(index>=0 && index<this.array.length){
             T[] newArray=(T[]) new Object[this.array.length+1];
+            int temp=this.position;
             this.position=0;
 
             for (int i = 0; i <newArray.length ; i++) {
                 if(i==index)
                     newArray[i]=item;
                 else {
-                    newArray[i] = this.array[position];
-                    position++;
+                    newArray[i] = this.array[this.position];
+                    this.position++;
                 }
             }
+            this.position=temp;
             this.array=newArray;
         }
         else
             throw new IndexOutOfBoundsException();
     }
 
+    public void remove(int index){
+        if(index>=0 && index<this.array.length){
+            T[] newArray=(T[]) new Object[this.array.length-1];
+            int temp=this.position;
+            this.position=0;
 
+            for (int i = 0; i <this.array.length ; i++,this.position++) {
+                if(this.position==index)
+                    i--;
+                else
+                    newArray[i] = this.array[this.position];
+            }
+            this.position=temp-1;
+            this.array=newArray;
+        }
+        else
+            throw new IndexOutOfBoundsException();
+    }
 
     public boolean contains(T item){
         for (int i = 0; i <this.array.length ; i++) {
@@ -83,6 +102,10 @@ public class MyArrayList<T>{
     public void clear(){
         position=0;
         this.array=(T[]) new Object[0];
+    }
+
+    public void set(int index,T item){
+        this.array[index]=item;
     }
 
 }

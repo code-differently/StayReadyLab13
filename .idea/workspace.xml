@@ -55,7 +55,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.addAtIndexTest3">
+  <component name="RunManager" selected="JUnit.MyArrayListTest.addAtIndexTest5">
     <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
@@ -65,41 +65,41 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.addAtIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.addAtIndexTest4" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="addAtIndexTest" />
+      <option name="METHOD_NAME" value="addAtIndexTest4" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.addAtIndexTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.addAtIndexTest5" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="addAtIndexTest3" />
+      <option name="METHOD_NAME" value="addAtIndexTest5" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.clearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.removeAtIndexTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="clearTest" />
+      <option name="METHOD_NAME" value="removeAtIndexTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.clearTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.setTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="clearTest2" />
+      <option name="METHOD_NAME" value="setTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -107,11 +107,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyArrayListTest.addAtIndexTest3" />
+        <item itemvalue="JUnit.MyArrayListTest.addAtIndexTest5" />
+        <item itemvalue="JUnit.MyArrayListTest.addAtIndexTest4" />
         <item itemvalue="JUnit.MyArrayListTest" />
-        <item itemvalue="JUnit.MyArrayListTest.addAtIndexTest" />
-        <item itemvalue="JUnit.MyArrayListTest.clearTest2" />
-        <item itemvalue="JUnit.MyArrayListTest.clearTest" />
+        <item itemvalue="JUnit.MyArrayListTest.setTest2" />
+        <item itemvalue="JUnit.MyArrayListTest.removeAtIndexTest2" />
       </list>
     </recent_temporary>
   </component>
@@ -149,43 +149,29 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1596034587136" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596050864819">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596055581101">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596050864819" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596050864818">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596055581101" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596055581099">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596050864818" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596050864817">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596055581099" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596055581099">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596050864817" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596050864818">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596055581099" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596055581100">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596050864818" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596055581100" />
     <state x="328" y="106" key="SettingsEditor" timestamp="1596035361336">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="328" y="106" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1596035361336" />
-    <state x="505" y="187" width="670" height="676" key="search.everywhere.popup" timestamp="1596045298745">
+    <state x="505" y="187" width="670" height="676" key="search.everywhere.popup" timestamp="1596052389275">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="505" y="187" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1596045298745" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-method">
-          <url>file://$PROJECT_DIR$/src/test/java/MyArrayListTest.java</url>
-          <line>272</line>
-          <properties class="MyArrayListTest" method="addAtIndexTest3">
-            <option name="EMULATED" value="true" />
-          </properties>
-          <option name="timeStamp" value="4" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <state x="505" y="187" width="670" height="676" key="search.everywhere.popup/0.0.1680.1050@0.0.1680.1050" timestamp="1596052389275" />
   </component>
 </project>

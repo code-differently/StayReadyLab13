@@ -253,6 +253,7 @@ public class MyArrayListTest {
         // Then
         Assert.assertEquals(expected,actual);
     }
+
     @Test(expected = IndexOutOfBoundsException.class)
     public void addAtIndexTest2(){
         // Given
@@ -281,6 +282,118 @@ public class MyArrayListTest {
 
         // Then
         Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void addAtIndexTest4(){
+        // Given
+        String expected="NO";
+
+        // When
+        MyArrayList<String> test=new MyArrayList<String>(5);
+        test.add("YUP",3);
+        test.add("NO");
+        String actual=test.get(0);
+
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test
+    public void addAtIndexTest5(){
+        // Given
+        String expected="REMOVED 3";
+        String expected2="Test3";
+
+        // When
+        MyArrayList<String> test=new MyArrayList<String>(5);
+        test.add("YUP",3);
+        test.add("NO");
+        test.add("test");
+        test.add("aaaa");
+        test.add("REMOVED 3");
+        test.add("Test3");
+        System.out.println(test.getSize());
+        String actual=test.get(3);
+        int leng=test.getSize()-2;
+        String actual2=test.get(leng);
+
+        // Then
+        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expected2,actual2);
+    }
+
+    @Test
+    public void addAtIndexTest6(){
+        // Given
+        String expected="WORD";
+
+        // When
+        MyArrayList<String> test=new MyArrayList<String>(5);
+        test.add("NO");
+        test.add("test");
+        test.add("aaaa");
+        test.add("YUP",3);
+        test.add("REMOVED 3");
+        test.add("FOUND");
+        test.add("NOPE",0);
+        test.add("WORD");
+        String actual=test.get(7);
+
+        // Then
+        Assert.assertEquals(expected,actual);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void setTest(){
+        // Given
+        int expected=6;
+
+        // When
+        MyArrayList<Integer> test=new MyArrayList<Integer>();
+        test.add(5);
+        test.add(3);
+        test.set(2,5);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void setTest2(){
+        // Given
+        int expected=6;
+
+        // When
+        MyArrayList<Integer> test=new MyArrayList<Integer>();
+        test.add(5);
+        test.add(3);
+        test.set(2,5);
+    }
+
+    @Test(expected = IndexOutOfBoundsException.class)
+    public void removeAtIndexTest(){
+        // When
+        MyArrayList<Integer> test=new MyArrayList<Integer>();
+        test.add(5);
+        test.add(3);
+        test.remove(-1);
+    }
+
+    @Test
+    public void removeAtIndexTest2(){
+        // Given
+        int expected=3;
+        int expectedSize=1;
+
+        // When
+        MyArrayList<Integer> test=new MyArrayList<Integer>();
+        test.add(5);
+        test.add(3);
+        test.remove(0);
+        int actual=test.get(0);
+        int actualSize=test.getSize();
+
+        // Then
+        Assert.assertEquals(expected,actual);
+        Assert.assertEquals(expectedSize,actualSize);
     }
 
 }
