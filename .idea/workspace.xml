@@ -20,6 +20,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,16 +51,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.clearTest2">
-    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generics" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MyArrayListTest.containsTest2">
     <configuration name="MyArrayListTest.clearTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
@@ -80,11 +72,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.containsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="setTest" />
+      <option name="METHOD_NAME" value="containsTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.containsTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="METHOD_NAME" value="containsTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -102,11 +104,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyArrayListTest.containsTest2" />
+        <item itemvalue="JUnit.MyArrayListTest.containsTest" />
         <item itemvalue="JUnit.MyArrayListTest.clearTest2" />
         <item itemvalue="JUnit.MyArrayListTest.clearTest" />
         <item itemvalue="JUnit.MyArrayListTest.setTest2" />
-        <item itemvalue="JUnit.MyArrayListTest.setTest" />
-        <item itemvalue="JUnit.MyArrayListTest" />
       </list>
     </recent_temporary>
   </component>
@@ -147,22 +149,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1596038044691" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596051466286">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596051820705">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596051466286" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596051466282">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596051820705" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596051820703">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596051466282" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596051466281">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596051820703" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596051820702">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596051466281" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596051466284">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596051820702" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596051820704">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596051466284" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596051820704" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1596043203345">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

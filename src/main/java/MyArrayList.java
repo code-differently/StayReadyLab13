@@ -119,4 +119,14 @@ public class MyArrayList<T> {
         this.myArray = (T[]) (new Object[0]);
         this.currentSize = this.myArray.length;
     }
+    public boolean contains(T type){
+        boolean doesContain = false;
+        for(int i = 0; i < this.currentSize; i++){
+            if(this.myArray[i] == type){
+                doesContain = true;
+                break;
+            }
+        }
+        return doesContain;
+    }
 }

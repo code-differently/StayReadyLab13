@@ -271,4 +271,30 @@ public class MyArrayListTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+    @Test
+    public <T> void containsTest(){
+        //Given
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        boolean actual = myArrayList.contains(((T) "A"));
+        //Then
+        Assert.assertTrue(actual);
+    }
+    @Test
+    public <T> void containsTest2(){
+        //Given
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        boolean actual = myArrayList.contains(((T) "D"));
+        //Then
+        Assert.assertFalse(actual);
+    }
 }
