@@ -244,7 +244,31 @@ public class MyArrayListTest {
         //Given
         int expected = 0;
         //When
-
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        myArrayList.clear();
+        int actual = myArrayList.getCurrentSize();
         //Then
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void clearTest2(){
+        //Given
+        int expected = 0;
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        myArrayList.clear();
+        int actual = myArrayList.getCurrentSize();
+        //Then
+        Assert.assertEquals(expected,actual);
     }
 }
