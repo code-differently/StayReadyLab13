@@ -111,4 +111,12 @@ public class MyArrayList<T> {
     public T get(int index){
         return this.myArray[index];
     }
+    public void set(int index, T type){
+        this.myArray[index] = type;
+    }
+    @SuppressWarnings("unchecked")
+    public void clear(){
+        this.myArray = (T[]) (new Object[0]);
+        this.currentSize = this.myArray.length;
+    }
 }
