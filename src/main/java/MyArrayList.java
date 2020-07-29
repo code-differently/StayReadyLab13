@@ -96,14 +96,13 @@ public class MyArrayList<T> {
             for(int i = 0; i < this.currentSize; i++){
                 if(this.myArray != type && i != this.currentSize - 1){
                     revamped[i] = this.myArray[i];
-                    if(!isFound){
-
-                    }
-                }
-                else if(this.myArray[i] == type){
+                } else if(this.myArray[i] == type){
                     isFound = true;
+                } else if(!isFound && i != this.currentSize - 1){
+                    revamped[i] = this.myArray[i];
+                } else if(i == this.currentSize - 1){
+                    revamped[i - 1] = this.myArray[i];
                 }
-                else if()
             }
             this.myArray = revamped;
             this.currentSize = this.myArray.length;

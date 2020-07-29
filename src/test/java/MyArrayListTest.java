@@ -150,4 +150,35 @@ public class MyArrayListTest {
         //Then
         Assert.assertEquals(expected,actual);
     }
+    @Test
+    public void removeTypeTest2(){
+        //Given
+        int expected = 3;
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        myArrayList.remove("A");
+        int actual = myArrayList.getCurrentSize();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
+    @Test
+    public void removeTypeTest3(){
+        //Given
+        int expected = 4;
+        //When
+        MyArrayList myArrayList = new MyArrayList();
+        myArrayList.add("A");
+        myArrayList.add("A");
+        myArrayList.add("B");
+        myArrayList.add("C");
+        myArrayList.add("B");
+        myArrayList.remove("B");
+        int actual = myArrayList.getCurrentSize();
+        //Then
+        Assert.assertEquals(expected,actual);
+    }
 }
