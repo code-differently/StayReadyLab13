@@ -1,23 +1,23 @@
 import org.junit.Assert;
 import org.junit.Test;
 
-public class MyArrayListTest {
+public class MyArrayListTest<T> {
     @Test
     public void myArrayListDefaultTest(){
         //Given
         int expected = 0;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<T> myArrayList = new MyArrayList<T>();
         int actual = myArrayList.getCurrentSize();
         //Then
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public void myArrayListConstrutorTest(){
+    public void myArrayListConstructorTest(){
         //Given
         int expected = 5;
         //When
-        MyArrayList myArrayList = new MyArrayList(5);
+        MyArrayList<T> myArrayList = new MyArrayList<T>(5);
         int actual = myArrayList.getCurrentSize();
         //Then
         Assert.assertEquals(expected,actual);
@@ -27,7 +27,7 @@ public class MyArrayListTest {
         //Given
         int expected = 20;
         //When
-        MyArrayList myArrayList = new MyArrayList(20);
+        MyArrayList<T> myArrayList = new MyArrayList<T>(20);
         int actual = myArrayList.getCurrentSize();
         //Then
         Assert.assertEquals(expected,actual);
@@ -37,7 +37,7 @@ public class MyArrayListTest {
         //Given
         int expected = 0;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(1, 2);
         int actual = myArrayList.getCurrentSize();
         //Then
@@ -46,11 +46,12 @@ public class MyArrayListTest {
     @Test
     public void addWithIndexTest(){
         //Given
-        int expected = 4;
+        int expected = 5;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(1);
         myArrayList.add(2);
+        myArrayList.add(9, 0);
         myArrayList.add(3);
         myArrayList.add(4, 1);
         int actual = myArrayList.getCurrentSize();
@@ -63,7 +64,7 @@ public class MyArrayListTest {
         //Given
         int expected = 1;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(4);
         int actual = myArrayList.getCurrentSize();
         //Then
@@ -74,7 +75,7 @@ public class MyArrayListTest {
     public void isEmptyTest(){
         //Given
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(1);
 
         boolean actual = myArrayList.isEmpty();
@@ -86,7 +87,7 @@ public class MyArrayListTest {
     public void isEmptyTest2(){
         //Given
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<T> myArrayList = new MyArrayList<T>();
         boolean actual = myArrayList.isEmpty();
 
         //Then
@@ -97,7 +98,7 @@ public class MyArrayListTest {
         //Given
         int expected = 2;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(1);
         myArrayList.add(2);
         myArrayList.add(3);
@@ -111,7 +112,7 @@ public class MyArrayListTest {
         //Given
         int expected = 1;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(1);
         myArrayList.add(2);
         myArrayList.add(3);
@@ -126,7 +127,7 @@ public class MyArrayListTest {
         //Given
         int expected = 2;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(1);
         myArrayList.add(2);
         myArrayList.add(3);
@@ -140,7 +141,7 @@ public class MyArrayListTest {
         //Given
         int expected = 3;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("B");
         myArrayList.add("B");
@@ -155,7 +156,7 @@ public class MyArrayListTest {
         //Given
         int expected = 3;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
@@ -170,7 +171,7 @@ public class MyArrayListTest {
         //Given
         int expected = 4;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
@@ -182,11 +183,11 @@ public class MyArrayListTest {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public <T> void getTest(){
+    public void getTest(){
         //Given
-        T expected = (T) "A";
+        T expected = (T)"A";
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
@@ -196,11 +197,11 @@ public class MyArrayListTest {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public <T> void getTest2(){
+    public void getTest2(){
         //Given
-        T expected = (T) "B";
+        T expected = (T)"B";
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
@@ -210,31 +211,31 @@ public class MyArrayListTest {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public <T> void setTest(){
+    public void setTest(){
         //Given
-        T expected = (T) "B";
+        T expected = (T)"B";
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
         myArrayList.add("C");
-        myArrayList.set(0, (T) "B");
+        myArrayList.set(0,"B");
         T actual = (T) myArrayList.get(0);
         //Then
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public <T> void setTest2(){
+    public void setTest2(){
         //Given
-        T expected = (T) "B";
+        T expected = (T)"B";
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
         myArrayList.add("C");
-        myArrayList.set(3, (T) "B");
+        myArrayList.set(3,"B");
         T actual = (T) myArrayList.get(3);
         //Then
         Assert.assertEquals(expected,actual);
@@ -244,7 +245,7 @@ public class MyArrayListTest {
         //Given
         int expected = 0;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
@@ -259,7 +260,7 @@ public class MyArrayListTest {
         //Given
         int expected = 0;
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("A");
@@ -272,28 +273,28 @@ public class MyArrayListTest {
         Assert.assertEquals(expected,actual);
     }
     @Test
-    public <T> void containsTest(){
+    public void containsTest(){
         //Given
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
         myArrayList.add("C");
-        boolean actual = myArrayList.contains(((T) "A"));
+        boolean actual = myArrayList.contains("A");
         //Then
         Assert.assertTrue(actual);
     }
     @Test
-    public <T> void containsTest2(){
+    public void containsTest2(){
         //Given
         //When
-        MyArrayList myArrayList = new MyArrayList();
+        MyArrayList<String> myArrayList = new MyArrayList<String>();
         myArrayList.add("A");
         myArrayList.add("A");
         myArrayList.add("B");
         myArrayList.add("C");
-        boolean actual = myArrayList.contains(((T) "D"));
+        boolean actual = myArrayList.contains("D");
         //Then
         Assert.assertFalse(actual);
     }
