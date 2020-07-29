@@ -1,11 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="" />
+    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyIterator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -20,8 +34,67 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="JUnit.MyArrayListTest.isEmptyTestTrue">
+    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.isEmptyTestTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="METHOD_NAME" value="isEmptyTestTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.retainAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="METHOD_NAME" value="retainAllTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyArrayListTest.retainAllTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="METHOD_NAME" value="retainAllTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyArrayListTest.isEmptyTestTrue" />
+        <item itemvalue="JUnit.MyArrayListTest" />
+        <item itemvalue="JUnit.MySetTest" />
+        <item itemvalue="JUnit.MyArrayListTest.retainAllTest2" />
+        <item itemvalue="JUnit.MyArrayListTest.retainAllTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,5 +112,56 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="411" y="124" width="929" height="625" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1596044140885">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="411" y="124" width="929" height="625" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1440.900@0.0.1440.900" timestamp="1596041104369" />
+    <state x="411" y="124" width="929" height="625" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.23.1440.825@0.23.1440.825" timestamp="1596044140885" />
+    <state x="437" y="245" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596029865857">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="437" y="245" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.826@0.23.1440.826" timestamp="1596029865857" />
+    <state x="785" y="150" key="#com.intellij.ide.util.MemberChooser" timestamp="1596055414466">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="785" y="150" key="#com.intellij.ide.util.MemberChooser/0.23.1440.825@0.23.1440.825" timestamp="1596055414466" />
+    <state x="658" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1596055739653">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="658" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.825@0.23.1440.825" timestamp="1596055739653" />
+    <state width="893" height="238" key="GridCell.Tab.0.bottom" timestamp="1596055917876">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596044227497" />
+    <state width="893" height="238" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1596055917876" />
+    <state width="1087" height="265" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1596032527833" />
+    <state width="893" height="238" key="GridCell.Tab.0.center" timestamp="1596055917876">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596044227495" />
+    <state width="893" height="238" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1596055917876" />
+    <state width="1087" height="265" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1596032527833" />
+    <state width="893" height="238" key="GridCell.Tab.0.left" timestamp="1596055917875">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596044227495" />
+    <state width="893" height="238" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1596055917875" />
+    <state width="1087" height="265" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1596032527832" />
+    <state width="893" height="238" key="GridCell.Tab.0.right" timestamp="1596055917876">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596044227496" />
+    <state width="893" height="238" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1596055917876" />
+    <state width="1087" height="265" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1596032527833" />
+    <state x="377" y="74" key="SettingsEditor" timestamp="1596032174513">
+      <screen x="0" y="23" width="1440" height="826" />
+    </state>
+    <state x="377" y="74" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1596032174513" />
+    <state x="637" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1596055173276">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state x="637" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1596055173276" />
   </component>
 </project>
