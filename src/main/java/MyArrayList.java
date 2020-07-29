@@ -2,14 +2,11 @@ import java.util.Arrays;
 import java.util.Collection;
 
 public class MyArrayList<T> {
-    private T type;
     private int lastIndex;
     private T[] arr;
-    private int size;
     private int defaultSize = 0;
 
     public MyArrayList() {
-        this.type = (T) (new Object());
         this.arr = (T[]) (new Object[defaultSize]);
         this.lastIndex = defaultSize - 1;
     }
@@ -58,9 +55,44 @@ public class MyArrayList<T> {
         return typeArr.length != 0;
     }
 
+    // Removes all of the elements from this list
+    public void clear() {
+        lastIndex++;
+        arr = (T[]) (new Object[defaultSize]);
+    }
+
+    // Returns a shallow copy of this ArrayList instance
+    public Object clone() {
+        return Arrays.copyOf(arr, arr.length);
+    }
+
+    // returns true if this list contains the specified element.
+    public boolean contains(Object o) {
+        return indexOf(o) != -1;
+    }
+
+    // Increases the capacity of this ArrayList instance, if necessary,
+    // to ensure that it can hold at least the number of elements specified by the minimum capacity argument
+    public void ensureCapacity(int minCapacity) {
+        if (arr.length < minCapacity) {
+            arr = Arrays.copyOf(arr, arr.length + (minCapacity - arr.length));
+        }
+    }
+
     // Returns the element at the specified position in this list
     public T get(int i) {
         return arr[i];
+    }
+
+    // Returns the index of the first occurrence of the specified element in this list,
+    // or -1 if this list does not contain the element
+    public int indexOf(Object o) {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i].equals(o)) {
+                return i;
+            }
+        }
+        return -1;
     }
 
     // Removes the element at the specified position in this list

@@ -69,6 +69,58 @@ public class MyArrayListTest {
     }
 
     @Test
+    public void clearTest() {
+        MyArrayList<String> obj = new MyArrayList<>(5);
+
+        obj.clear();
+        int expectedSize = 0;
+
+        assertEquals(expectedSize, obj.size());
+    }
+
+    @Test
+    public void containsTest() {
+        MyArrayList<String> obj = new MyArrayList<>();
+
+        String stringInserted = "5";
+        obj.add(stringInserted);
+
+        assertTrue(obj.contains(stringInserted));
+    }
+
+    @Test
+    public void containsTest2() {
+        MyArrayList<String> obj = new MyArrayList<>();
+
+        String stringNotInserted = "5";
+        obj.add("blah");
+
+        assertFalse(obj.contains(stringNotInserted));
+    }
+
+    @Test
+    public void ensureCapacityTest() {
+        //INCOMPLETE
+        MyArrayList<String> obj = new MyArrayList<>();
+
+        String stringNotInserted = "5";
+        obj.add("blah");
+
+        assertFalse(obj.contains(stringNotInserted));
+    }
+
+    @Test
+    public void indexOfTest() {
+        //INCOMPLETE
+        MyArrayList<String> obj = new MyArrayList<>();
+
+        String stringNotInserted = "5";
+        obj.add("blah");
+
+        assertFalse(obj.contains(stringNotInserted));
+    }
+
+    @Test
     public void removeTest() {
         MyArrayList<String> obj = new MyArrayList<>(5);
         String[] stuff = {"hi", "bye", "sigh"};

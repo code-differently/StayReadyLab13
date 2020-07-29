@@ -20,11 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/.deleteme" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/.deleteme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +53,10 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest">
+  <component name="RunManager" selected="JUnit.MyArrayListTest.containsTest2">
     <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
@@ -67,21 +66,21 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.addAll" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.containsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="addAll" />
+      <option name="METHOD_NAME" value="containsTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.addAll2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.containsTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="addAll2" />
+      <option name="METHOD_NAME" value="containsTest2" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MyArrayListTest.containsTest2" />
+        <item itemvalue="JUnit.MyArrayListTest.containsTest" />
         <item itemvalue="JUnit.MyArrayListTest" />
         <item itemvalue="JUnit.MyArrayListTest.removeTest2" />
         <item itemvalue="JUnit.MyArrayListTest.removeTest" />
-        <item itemvalue="JUnit.MyArrayListTest.addAll2" />
-        <item itemvalue="JUnit.MyArrayListTest.addAll" />
       </list>
     </recent_temporary>
   </component>
@@ -128,7 +127,7 @@
       <option name="presentableId" value="Default" />
       <updated>1595254333495</updated>
       <workItem from="1595254339928" duration="19000" />
-      <workItem from="1596038859091" duration="12827000" />
+      <workItem from="1596038859091" duration="15209000" />
     </task>
     <servers />
   </component>
@@ -155,21 +154,21 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="558" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1504.963@0.0.1504.963" timestamp="1596039376551" />
-    <state width="1461" height="255" key="GridCell.Tab.0.bottom" timestamp="1596056606588">
+    <state width="1461" height="255" key="GridCell.Tab.0.bottom" timestamp="1596059228580">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="255" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1596056606588" />
-    <state width="1461" height="255" key="GridCell.Tab.0.center" timestamp="1596056606587">
+    <state width="1461" height="255" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1596059228580" />
+    <state width="1461" height="255" key="GridCell.Tab.0.center" timestamp="1596059228580">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="255" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1596056606587" />
-    <state width="1461" height="255" key="GridCell.Tab.0.left" timestamp="1596056606587">
+    <state width="1461" height="255" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1596059228580" />
+    <state width="1461" height="255" key="GridCell.Tab.0.left" timestamp="1596059228580">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="255" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1596056606587" />
-    <state width="1461" height="255" key="GridCell.Tab.0.right" timestamp="1596056606587">
+    <state width="1461" height="255" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1596059228580" />
+    <state width="1461" height="255" key="GridCell.Tab.0.right" timestamp="1596059228580">
       <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state width="1461" height="255" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1596056606587" />
+    <state width="1461" height="255" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1596059228580" />
   </component>
 </project>
