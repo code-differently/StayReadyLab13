@@ -1,16 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="" />
+    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_12.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_13.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generics.iml" beforeDir="false" afterPath="$PROJECT_DIR$/generics.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/.deleteme" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/.deleteme" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1exDQNfOztURPyf6tfGTBIm2AuJ" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -18,10 +36,82 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../WhoIsTheCodeGoat/pom.xml" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="JUnit.MapTest.testSize">
+    <configuration name="ArrayListTest.testSet" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ArrayListTest" />
+      <option name="METHOD_NAME" value="testSet" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="HashSetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="HashSetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.testContainsValue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="testContainsValue" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MapTest.testSize" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MapTest" />
+      <option name="METHOD_NAME" value="testSize" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MapTest.testSize" />
+        <item itemvalue="JUnit.MapTest.testContainsValue" />
+        <item itemvalue="JUnit.MapTest" />
+        <item itemvalue="JUnit.HashSetTest" />
+        <item itemvalue="JUnit.ArrayListTest.testSet" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -39,5 +129,43 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="399" y="182" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596041116534">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="399" y="182" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1280.760@0.0.1280.760" timestamp="1596041116534" />
+    <state x="765" y="92" key="#com.intellij.ide.util.MemberChooser" timestamp="1596127308872">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="765" y="92" key="#com.intellij.ide.util.MemberChooser/0.0.1280.760@0.0.1280.760" timestamp="1596127308872" />
+    <state x="808" y="271" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog" timestamp="1596041190244">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="808" y="271" key="#com.intellij.ide.util.projectWizard.JdkChooserPanel.MyDialog/0.0.1280.760@0.0.1280.760" timestamp="1596041190244" />
+    <state x="559" y="155" key="FileChooserDialogImpl" timestamp="1596061338579">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="559" y="155" key="FileChooserDialogImpl/0.0.1280.760@0.0.1280.760" timestamp="1596061338579" />
+    <state width="1237" height="247" key="GridCell.Tab.0.bottom" timestamp="1596129884077">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.bottom/0.0.1280.760@0.0.1280.760" timestamp="1596129884077" />
+    <state width="1237" height="247" key="GridCell.Tab.0.center" timestamp="1596129884077">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.center/0.0.1280.760@0.0.1280.760" timestamp="1596129884077" />
+    <state width="1237" height="247" key="GridCell.Tab.0.left" timestamp="1596129884077">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.left/0.0.1280.760@0.0.1280.760" timestamp="1596129884077" />
+    <state width="1237" height="247" key="GridCell.Tab.0.right" timestamp="1596129884077">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state width="1237" height="247" key="GridCell.Tab.0.right/0.0.1280.760@0.0.1280.760" timestamp="1596129884077" />
+    <state x="-7" y="0" width="654" height="767" key="dock-window-1" timestamp="1596127625001">
+      <screen x="0" y="0" width="1280" height="760" />
+    </state>
+    <state x="-7" y="0" width="654" height="767" key="dock-window-1/0.0.1280.760@0.0.1280.760" timestamp="1596127625001" />
   </component>
 </project>
