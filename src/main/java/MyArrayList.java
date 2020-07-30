@@ -1,33 +1,34 @@
 import java.lang.reflect.Array;
+import java.util.Arrays;
 
-public class MyArrayList <E extends Comparable>{
-    private E[] expansiveArray;
+public class MyArrayList <E extends Object>{
+    private Object[] expansiveArray;
 
-    @SuppressWarnings("unchecked")
-    public MyArrayList(Class <E> myClass) {
-        expansiveArray = (E[])  Array.newInstance(myClass, 0);
+    public MyArrayList() {
+        expansiveArray = new Object[0];
+    }
+
+    public MyArrayList(int size) {
+        expansiveArray = new Object[size];
     }
 
     @SuppressWarnings("unchecked")
-    public MyArrayList(Class <E> myClass, int size) {
-        expansiveArray = (E[])  Array.newInstance(myClass, size);
-//        int index = 0;
-//        for(E element: expansiveArray) {
-//            expansiveArray[index] = ;
-//            index++;
-//        }
+    private void populateArray(Object[] array, Object elementToSet) {
+        Arrays.fill(array, (E) elementToSet);
     }
 
     public int size() {
         return expansiveArray.length;
     }
 
+    @SuppressWarnings("unchecked")
     public E get(int index) {
-        return expansiveArray[index];
+        return (E) expansiveArray[index];
     }
 
+    @SuppressWarnings("unchecked")
     public E set(int index, E element) {
-        E temp = expansiveArray[index];
+        E temp = (E) expansiveArray[index];
         expansiveArray[index] = element;
         return temp;
     }

@@ -3,20 +3,20 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MyArrayListTest{
-    MyArrayList<String> strArrList;
-    MyArrayList<Integer> intArrList;
+    MyArrayList<String> strArrListNoLength;
+    MyArrayList<Integer> strArrListWithLength;
 
     @Before
     public void setup() {
-        strArrList = new MyArrayList(String.class);
-        intArrList = new MyArrayList(Integer.class, 5);
+        strArrListNoLength = new MyArrayList<>();
+        strArrListWithLength = new MyArrayList<>(5);
     }
 
     @Test
     public void myArrayListOneArgSizeTest() {
         int expectedSize = 0;
 
-        int actualSize = strArrList.size();
+        int actualSize = strArrListNoLength.size();
 
         assertEquals(expectedSize, actualSize);
     }
@@ -25,7 +25,7 @@ public class MyArrayListTest{
     public void myArrayListTwoArgSizeTest() {
         int expectedSize = 5;
 
-        int actualSize = intArrList.size();
+        int actualSize = strArrListWithLength.size();
 
         assertEquals(expectedSize, actualSize);
     }
@@ -44,7 +44,7 @@ public class MyArrayListTest{
     public void getTest() {
         int expectedReturnValue = 0;
 
-        int actualReturnValue = intArrList.get(2);
+        int actualReturnValue = strArrListWithLength.get(2);
 
         assertEquals(expectedReturnValue, actualReturnValue);
     }
