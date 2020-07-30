@@ -1,5 +1,9 @@
 import org.junit.Assert;
 import org.junit.Test;
+import org.junit.experimental.theories.suppliers.TestedOn;
+
+import java.util.ArrayList;
+import java.util.Collection;
 
 public class MySetTest<T> {
     @Test
@@ -100,5 +104,51 @@ public class MySetTest<T> {
         //Then
         Assert.assertTrue(actual);
     }
-
+    @Test
+    public void containsAllTest(){
+        //Given
+        Collection c = new ArrayList();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.containsAll(c);
+        //Then
+        Assert.assertTrue(actual);
+    }
+    @Test
+    public void containsAllTest2(){
+        //Given
+        Collection c = new ArrayList();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        boolean actual = mySet.containsAll(c);
+        //Then
+        Assert.assertFalse(actual);
+    }
+    @Test
+    public void containsAllTest3(){
+        //Given
+        Collection c = new ArrayList();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("D");
+        mySet.add("C");
+        mySet.add("A");
+        boolean actual = mySet.containsAll(c);
+        //Then
+        Assert.assertFalse(actual);
+    }
 }

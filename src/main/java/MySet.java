@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 public class MySet<T> {
     private T[] myArray;
     private int currentSize;
@@ -59,4 +61,19 @@ public class MySet<T> {
         }
         return toAdd;
     }
+    public boolean containsAll(Collection c){
+        boolean doesContainAll = true;
+        if(c.size() != this.currentSize){
+            doesContainAll = false;
+        }
+        else {
+            for (int i = 0; i < c.size(); i++) {
+                if (!c.contains(this.myArray[i])) {
+                    doesContainAll = false;
+                }
+            }
+        }
+        return doesContainAll;
+    }
+
 }
