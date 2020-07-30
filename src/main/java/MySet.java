@@ -1,3 +1,6 @@
+import java.util.Collection;
+import java.util.Set;
+
 public class MySet<T> {
     private T[] set;
     int position;
@@ -47,6 +50,19 @@ public class MySet<T> {
         return isAdded;
     }
 
+    public boolean addAll(Collection<T> c){
+        boolean isAdded=false;
+        for (T item :
+            c) {
+
+            if(isAdded==true)
+                add(item);
+            else
+                isAdded=add(item);
+        }
+        return isAdded;
+    }
+
     public void remove(int index){
         if(index>=0 && index<this.set.length){
             T[] newset=(T[]) new Object[this.set.length-1];
@@ -74,6 +90,19 @@ public class MySet<T> {
         return false;
     }
 
+    public boolean containsAll(Collection<T> c){
+        boolean containsAll=true;
+        for (T item :
+            c) {
+
+            if(!contains(item))
+                return false;
+        }
+        return containsAll;
+    }
+
+
+
     public void clear(){
         position=0;
         this.set=(T[]) new Object[0];
@@ -81,6 +110,10 @@ public class MySet<T> {
 
     public int hashCode(){
         return this.set.hashCode();
+    }
+
+    public boolean equals(MySet<T> o){
+        return o.hashCode()==this.hashCode();
     }
 
 }
