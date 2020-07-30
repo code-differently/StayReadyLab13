@@ -15,4 +15,13 @@ public class MySet<T> {
     public int getCurrentSize(){
         return this.currentSize;
     }
+    public boolean isEmpty(){
+        int numberOfNulls = 0;
+        for(T type: this.myArray){
+            if(type == null){
+                numberOfNulls++;
+            }
+        }
+        return numberOfNulls == this.myArray.length ? true : false;
+    }
 }

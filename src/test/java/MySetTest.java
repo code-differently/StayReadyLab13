@@ -32,4 +32,14 @@ public class MySetTest<T> {
         //Then
         Assert.assertEquals(expected,actual);
     }
+    @Test
+    public void isEmptyTest(){
+        //Given
+        //When
+        MyArrayList<T> myArrayList = new MyArrayList<T>();
+        boolean actual = myArrayList.isEmpty();
+
+        //Then
+        Assert.assertTrue(actual);
+    }
 }
