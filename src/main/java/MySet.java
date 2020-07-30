@@ -80,5 +80,9 @@ public class MySet<T> {
         }
         return isAddAll;
     }
+    public void clear(){
+        this.myArray = (T[]) (new Object[0]);
+        this.currentSize = this.myArray.length;
+    }
 
 }

@@ -198,4 +198,34 @@ public class MySetTest<T> {
         //Then
         Assert.assertTrue(actual);
     }
+    @Test
+    public void clearTest(){
+        //Given
+        int expected = 0;
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        mySet.clear();
+        int actual = mySet.getCurrentSize();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void clearTest2(){
+        //Given
+        int expected = 0;
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        mySet.add("D");
+        mySet.add("E");
+        mySet.clear();
+        int actual = mySet.getCurrentSize();
+        //Then
+        Assert.assertEquals(expected, actual);
+    }
 }
