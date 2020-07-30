@@ -62,11 +62,14 @@ public class MyArrayListTest<T> {
     @Test
     public void addAtEndTest(){
         //Given
-        int expected = 1;
+        int expected = 3;
         //When
         MyArrayList<Integer> myArrayList = new MyArrayList<Integer>();
         myArrayList.add(4);
+        myArrayList.add(6);
+        myArrayList.add(7);
         int actual = myArrayList.getCurrentSize();
+
         //Then
         Assert.assertEquals(expected,actual);
     }

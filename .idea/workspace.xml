@@ -51,7 +51,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest">
+  <component name="RunManager" selected="JUnit.MySetTest">
     <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
@@ -61,21 +61,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.addWithIndexTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyArrayListTest.addAtEndTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="addWithIndexTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyArrayListTest.getCurrentSizeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generics" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="getCurrentSizeTest" />
+      <option name="METHOD_NAME" value="addAtEndTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -91,11 +81,20 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.setTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="setTest2" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest.mySetDefaultTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="mySetDefaultTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -103,11 +102,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MySetTest" />
+        <item itemvalue="JUnit.MySetTest.mySetDefaultTest" />
+        <item itemvalue="JUnit.MyArrayListTest.addAtEndTest" />
         <item itemvalue="JUnit.MyArrayListTest" />
         <item itemvalue="JUnit.MyArrayListTest.removeTypeTest3" />
-        <item itemvalue="JUnit.MyArrayListTest.setTest2" />
-        <item itemvalue="JUnit.MyArrayListTest.getCurrentSizeTest" />
-        <item itemvalue="JUnit.MyArrayListTest.addWithIndexTest" />
       </list>
     </recent_temporary>
   </component>
@@ -138,6 +137,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="557" y="334" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596034752341">
@@ -148,37 +148,45 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1596038044691" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596053385149">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom" timestamp="1596056188659">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596053385149" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596053385145">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596054887999" />
+    <state width="1638" height="364" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188659" />
+    <state width="1638" height="364" key="GridCell.Tab.0.center" timestamp="1596056188658">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596053385145" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596053385138">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596054887991" />
+    <state width="1638" height="364" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188658" />
+    <state width="1638" height="364" key="GridCell.Tab.0.left" timestamp="1596056188658">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596053385138" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596053385147">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596054887990" />
+    <state width="1638" height="364" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188658" />
+    <state width="1638" height="364" key="GridCell.Tab.0.right" timestamp="1596056188659">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596053385147" />
-    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1596043203345">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596054887993" />
+    <state width="1638" height="364" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188659" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1596056188661">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596043203345" />
-    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1596043203344">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.1.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188661" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center" timestamp="1596056188660">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="364" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596043203344" />
-    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1596043203344">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.1.center/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188660" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left" timestamp="1596056188660">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="364" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596043203344" />
-    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1596043203345">
-      <screen x="0" y="0" width="1680" height="1050" />
+    <state width="1638" height="364" key="GridCell.Tab.1.left/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188660" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right" timestamp="1596056188661">
+      <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="1638" height="364" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596043203345" />
+    <state width="1638" height="364" key="GridCell.Tab.1.right/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188661" />
   </component>
 </project>
