@@ -1,4 +1,5 @@
 import java.util.Collection;
+import java.util.Set;
 
 public class MySet<T> {
     private T[] myArray;
@@ -12,7 +13,7 @@ public class MySet<T> {
         this.myArray = (T[]) (new Object[size]);
         this.currentSize = size;
     }
-    public int getCurrentSize(){
+    public int size(){
         return this.currentSize;
     }
     public boolean isEmpty(){
@@ -83,6 +84,24 @@ public class MySet<T> {
     public void clear(){
         this.myArray = (T[]) (new Object[0]);
         this.currentSize = this.myArray.length;
+    }
+    public boolean equals(Set<T> set2){
+        boolean isEqual = true;
+        if(set2.size() != this.size()){
+            isEqual = false;
+        }
+        else {
+            int count = 0;
+            for(T type : set2){
+                if(type != this.myArray[count]){
+                    isEqual = false;
+                    break;
+                }else{
+                    count++;
+                }
+            }
+        }
+        return isEqual;
     }
 
 }

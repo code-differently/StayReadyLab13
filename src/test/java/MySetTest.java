@@ -4,6 +4,8 @@ import org.junit.experimental.theories.suppliers.TestedOn;
 
 import java.util.ArrayList;
 import java.util.Collection;
+import java.util.HashSet;
+import java.util.Set;
 
 public class MySetTest<T> {
     @Test
@@ -12,7 +14,7 @@ public class MySetTest<T> {
         int expected = 0;
         //When
         MySet<T> mySet = new MySet<T>();
-        int actual = mySet.getCurrentSize();
+        int actual = mySet.size();
         //Then
         Assert.assertEquals(expected,actual);
     }
@@ -22,7 +24,7 @@ public class MySetTest<T> {
         int expected = 5;
         //When
         MySet<T> mySet = new MySet<T>(5);
-        int actual = mySet.getCurrentSize();
+        int actual = mySet.size();
         //Then
         Assert.assertEquals(expected,actual);
     }
@@ -32,7 +34,7 @@ public class MySetTest<T> {
         int expected = 20;
         //When
         MySet<T> mySet = new MySet<T>(20);
-        int actual = mySet.getCurrentSize();
+        int actual = mySet.size();
         //Then
         Assert.assertEquals(expected,actual);
     }
@@ -208,7 +210,7 @@ public class MySetTest<T> {
         mySet.add("B");
         mySet.add("C");
         mySet.clear();
-        int actual = mySet.getCurrentSize();
+        int actual = mySet.size();
         //Then
         Assert.assertEquals(expected, actual);
     }
@@ -224,8 +226,41 @@ public class MySetTest<T> {
         mySet.add("D");
         mySet.add("E");
         mySet.clear();
-        int actual = mySet.getCurrentSize();
+        int actual = mySet.size();
         //Then
         Assert.assertEquals(expected, actual);
+    }
+    @Test
+    public void isEqualTest(){
+        //Given
+        Set<String> set2 = new HashSet<String>();
+        set2.add("A");
+        set2.add("B");
+        set2.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.equals(set2);
+        //Then
+        Assert.assertTrue(actual);
+    }
+    @Test
+    public void isEqualTest2(){
+        //Given
+        Set<String> set2 = new HashSet<String>();
+        set2.add("A");
+        set2.add("B");
+        set2.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        mySet.add("D");
+        boolean actual = mySet.equals(set2);
+        //Then
+        Assert.assertFalse(actual);
     }
 }

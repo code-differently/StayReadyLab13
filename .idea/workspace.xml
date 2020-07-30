@@ -21,6 +21,8 @@
   <component name="ChangeListManager">
     <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MySet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MySetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -51,27 +53,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.MySetTest.clearTest2">
-    <configuration name="MySetTest.addsAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generics" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MySetTest" />
-      <option name="METHOD_NAME" value="addsAllTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MySetTest.addsAllTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generics" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MySetTest" />
-      <option name="METHOD_NAME" value="addsAllTest2" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="JUnit.MySetTest.isEqualTest2">
     <configuration name="MySetTest.addsAllTest3" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
@@ -102,13 +84,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MySetTest.isEqualTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="isEqualTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest.isEqualTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="isEqualTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MySetTest.isEqualTest2" />
+        <item itemvalue="JUnit.MySetTest.isEqualTest" />
         <item itemvalue="JUnit.MySetTest.clearTest2" />
         <item itemvalue="JUnit.MySetTest.clearTest" />
         <item itemvalue="JUnit.MySetTest.addsAllTest3" />
-        <item itemvalue="JUnit.MySetTest.addsAllTest2" />
-        <item itemvalue="JUnit.MySetTest.addsAllTest" />
       </list>
     </recent_temporary>
   </component>
@@ -150,25 +152,25 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="653" y="238" key="#com.intellij.ide.util.MemberChooser/0.0.1680.1050@0.0.1680.1050" timestamp="1596038044691" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596128252530">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1596128807576">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596128252530" />
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1596128807576" />
     <state width="1638" height="364" key="GridCell.Tab.0.bottom/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188659" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596128252528">
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1596128807574">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596128252528" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1596128807574" />
     <state width="1638" height="364" key="GridCell.Tab.0.center/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188658" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596128252527">
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1596128807573">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596128252527" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1596128807573" />
     <state width="1638" height="364" key="GridCell.Tab.0.left/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188658" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596128252529">
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1596128807576">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596128252529" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1596128807576" />
     <state width="1638" height="364" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1596056188659" />
     <state width="1638" height="364" key="GridCell.Tab.1.bottom" timestamp="1596056188661">
       <screen x="0" y="23" width="1680" height="1027" />
