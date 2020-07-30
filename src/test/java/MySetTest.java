@@ -7,10 +7,12 @@ import static org.junit.Assert.*;
 public class MySetTest {
 
     MySet <Integer> set;
+
     @Before
     public void initialize(){
         set = new MySet<>();
     }
+
     @Test
     public void addTest() {
         set.add(1);
@@ -73,5 +75,60 @@ public class MySetTest {
         set.add(1);
 
         Assert.assertArrayEquals(exp, set.toArray());
+    }
+
+    @Test
+    public void addAllTest() {
+        MySet<Integer> test = new MySet<>();
+        Object [] exp =  {1, 2, 3, 4};
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        test.add(4);
+
+        set.addAll(test);
+
+        Assert.assertArrayEquals(exp, set.toArray());
+    }
+
+    @Test
+    public void removeAllTest() {
+        MySet<Integer> test = new MySet<>();
+        Object [] exp =  {1, 3};
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        test.add(2);
+
+        set.removeAll(test);
+
+        Assert.assertArrayEquals(exp, set.toArray());
+    }
+    @Test
+    public void retainAllTest() {
+        MySet<Integer> test = new MySet<>();
+        Object [] exp =  {2};
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        test.add(2);
+
+        set.retainAll(test);
+
+        Assert.assertArrayEquals(exp, set.toArray());
+    }
+
+    @Test
+    public void containsAllTest() {
+        MySet<Integer> test = new MySet<>();
+        Object [] exp =  {1, 2, 3};
+        set.add(1);
+        set.add(2);
+        set.add(3);
+        test.add(1);
+        test.add(2);
+        test.add(3);
+
+        Assert.assertEquals(true, set.containsAll(test));
     }
 }
