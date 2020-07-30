@@ -36,10 +36,69 @@ public class MySetTest<T> {
     public void isEmptyTest(){
         //Given
         //When
-        MyArrayList<T> myArrayList = new MyArrayList<T>();
-        boolean actual = myArrayList.isEmpty();
+        MySet<T> mySet = new MySet<T>();
+        boolean actual = mySet.isEmpty();
 
         //Then
         Assert.assertTrue(actual);
     }
+    @Test
+    public void containsTest(){
+        //Given
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        boolean actual = mySet.contains("A");
+        //Then
+        Assert.assertTrue(actual);
+    }
+    @Test
+    public void containsTest2(){
+        //Given
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.contains("C");
+        //Then
+        Assert.assertTrue(actual);
+    }
+    @Test
+    public void containsTest3(){
+        //Given
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.contains("D");
+        //Then
+        Assert.assertFalse(actual);
+    }
+    @Test
+    public void addTest(){
+        //Given
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.add("B");
+        //Then
+        Assert.assertFalse(actual);
+    }
+    @Test
+    public void addTest2(){
+        //Given
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.add("D");
+        //Then
+        Assert.assertTrue(actual);
+    }
+
 }
