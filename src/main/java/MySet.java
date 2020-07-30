@@ -4,12 +4,10 @@ public class MySet<T> {
     private T[] myArray;
     private int currentSize;
 
-    @SuppressWarnings("unchecked")
     public MySet(){
         this.myArray = (T[]) (new Object[0]);
         this.currentSize = 0;
     }
-    @SuppressWarnings("unchecked")
     public MySet(int size){
         this.myArray = (T[]) (new Object[size]);
         this.currentSize = size;
@@ -61,7 +59,7 @@ public class MySet<T> {
         }
         return toAdd;
     }
-    public boolean containsAll(Collection c){
+    public boolean containsAll(Collection<T> c){
         boolean doesContainAll = true;
         if(c.size() != this.currentSize){
             doesContainAll = false;
@@ -74,6 +72,13 @@ public class MySet<T> {
             }
         }
         return doesContainAll;
+    }
+    public boolean addAll(Collection<T> c){
+        boolean isAddAll = false;
+        for(T type : c){
+            isAddAll = this.add(type);
+        }
+        return isAddAll;
     }
 
 }

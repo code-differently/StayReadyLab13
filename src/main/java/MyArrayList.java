@@ -6,13 +6,11 @@ public class MyArrayList<T> {
     private T[] myArray;
     private int currentSize;
 
-    @SuppressWarnings("unchecked")
     public MyArrayList(){
         this.myArray = (T[]) (new Object[0]);
         this.currentSize = 0;
     }
 
-    @SuppressWarnings("unchecked")
     public MyArrayList(int size){
         this.myArray = (T[]) (new Object[size]);
         this.currentSize = size;
@@ -22,7 +20,6 @@ public class MyArrayList<T> {
         return this.currentSize;
     }
 
-    @SuppressWarnings("unchecked")
     public void add(T type, int index){
         if(!this.isEmpty() && (index < this.currentSize && index >= 0)) {
             T[] revamped = (T[]) (new Object[this.currentSize + 1]);
@@ -40,7 +37,6 @@ public class MyArrayList<T> {
         }
     }
 
-    @SuppressWarnings("unchecked")
     public void add(T type){
         T[] revamped = (T[]) (new Object[this.currentSize + 1]);
         if(this.isEmpty()){
@@ -72,7 +68,6 @@ public class MyArrayList<T> {
         return numberOfNulls == this.myArray.length ? true : false;
     }
 
-    @SuppressWarnings("unchecked")
     public void remove(int index){
         if(!this.isEmpty() && (index < this.currentSize && index >= 0)) {
             T[] revamped = (T[]) (new Object[this.currentSize - 1]);
@@ -88,7 +83,6 @@ public class MyArrayList<T> {
         }
     }
 
-    @SuppressWarnings("unchecked")
     public void remove(T type){
         if(!this.isEmpty()) {
             T[] revamped = (T[]) (new Object[this.currentSize - 1]);
@@ -114,7 +108,7 @@ public class MyArrayList<T> {
     public void set(int index, T type){
         this.myArray[index] = type;
     }
-    @SuppressWarnings("unchecked")
+
     public void clear(){
         this.myArray = (T[]) (new Object[0]);
         this.currentSize = this.myArray.length;

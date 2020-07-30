@@ -138,7 +138,7 @@ public class MySetTest<T> {
     @Test
     public void containsAllTest3(){
         //Given
-        Collection c = new ArrayList();
+        Collection<String> c = new ArrayList<String>();
         c.add("A");
         c.add("B");
         c.add("C");
@@ -150,5 +150,52 @@ public class MySetTest<T> {
         boolean actual = mySet.containsAll(c);
         //Then
         Assert.assertFalse(actual);
+    }
+    @Test
+    public void addsAllTest(){
+        //Given
+        Collection<String> c = new ArrayList<String>();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        boolean actual = mySet.addAll(c);
+        //Then
+        Assert.assertTrue(actual);
+    }
+    @Test
+    public void addsAllTest2(){
+        //Given
+        Collection<String> c = new ArrayList<String>();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.addAll(c);
+        //Then
+        Assert.assertFalse(actual);
+    }
+    @Test
+    public void addsAllTest3(){
+        //Given
+        Collection<String> c = new ArrayList<String>();
+        c.add("A");
+        c.add("B");
+        c.add("C");
+        c.add("D");
+        //When
+        MySet<String> mySet = new MySet<String>();
+        mySet.add("A");
+        mySet.add("B");
+        mySet.add("C");
+        boolean actual = mySet.addAll(c);
+        //Then
+        Assert.assertTrue(actual);
     }
 }
