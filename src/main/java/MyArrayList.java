@@ -30,7 +30,6 @@ public class MyArrayList<T> implements Collection<T> {
 
     public boolean addAll(Collection<? extends T> c) {
         T[] newArray = Arrays.copyOf(list, size + c.size());
-        System.out.println("New array Length: " + newArray.length);
         Iterator<? extends T> iterator = c.iterator();
         while(size < newArray.length) {
             if(iterator.hasNext()) {

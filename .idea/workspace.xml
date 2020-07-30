@@ -1,13 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MyIterator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Generics.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -24,6 +26,13 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
   <component name="ProjectId" id="1exDQNfOztURPyf6tfGTBIm2AuJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -37,65 +46,67 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
-  <component name="RunManager" selected="JUnit.MyArrayListTest.isEmptyTestTrue">
-    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyMapTest">
+    <configuration name="MyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.isEmptyTestTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.entrySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="isEmptyTestTrue" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="entrySetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.retainAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.keySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="retainAllTest" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="keySetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.retainAllTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.putAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="retainAllTest2" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="putAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.valuesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MySetTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="valuesTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyArrayListTest.isEmptyTestTrue" />
-        <item itemvalue="JUnit.MyArrayListTest" />
-        <item itemvalue="JUnit.MySetTest" />
-        <item itemvalue="JUnit.MyArrayListTest.retainAllTest2" />
-        <item itemvalue="JUnit.MyArrayListTest.retainAllTest" />
+        <item itemvalue="JUnit.MyMapTest" />
+        <item itemvalue="JUnit.MyMapTest.valuesTest" />
+        <item itemvalue="JUnit.MyMapTest.entrySetTest" />
+        <item itemvalue="JUnit.MyMapTest.putAllTest" />
+        <item itemvalue="JUnit.MyMapTest.keySetTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -131,37 +142,53 @@
       <screen x="0" y="23" width="1440" height="825" />
     </state>
     <state x="658" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1440.825@0.23.1440.825" timestamp="1596055739653" />
-    <state width="893" height="238" key="GridCell.Tab.0.bottom" timestamp="1596055917876">
+    <state width="893" height="206" key="GridCell.Tab.0.bottom" timestamp="1596130798064">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596044227497" />
-    <state width="893" height="238" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1596055917876" />
-    <state width="1087" height="265" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1596032527833" />
-    <state width="893" height="238" key="GridCell.Tab.0.center" timestamp="1596055917876">
+    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596124342488" />
+    <state width="893" height="206" key="GridCell.Tab.0.bottom/0.23.1440.825@0.23.1440.825" timestamp="1596130798064" />
+    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.826@0.23.1440.826" timestamp="1596116100009" />
+    <state width="893" height="206" key="GridCell.Tab.0.center" timestamp="1596130798062">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596044227495" />
-    <state width="893" height="238" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1596055917876" />
-    <state width="1087" height="265" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1596032527833" />
-    <state width="893" height="238" key="GridCell.Tab.0.left" timestamp="1596055917875">
+    <state width="1398" height="238" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596124342487" />
+    <state width="893" height="206" key="GridCell.Tab.0.center/0.23.1440.825@0.23.1440.825" timestamp="1596130798062" />
+    <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.826@0.23.1440.826" timestamp="1596116100007" />
+    <state width="893" height="206" key="GridCell.Tab.0.left" timestamp="1596130798061">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596044227495" />
-    <state width="893" height="238" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1596055917875" />
-    <state width="1087" height="265" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1596032527832" />
-    <state width="893" height="238" key="GridCell.Tab.0.right" timestamp="1596055917876">
+    <state width="1398" height="238" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596124342486" />
+    <state width="893" height="206" key="GridCell.Tab.0.left/0.23.1440.825@0.23.1440.825" timestamp="1596130798061" />
+    <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.826@0.23.1440.826" timestamp="1596116100006" />
+    <state width="893" height="206" key="GridCell.Tab.0.right" timestamp="1596130798063">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596044227496" />
-    <state width="893" height="238" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1596055917876" />
-    <state width="1087" height="265" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1596032527833" />
+    <state width="1398" height="238" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596124342487" />
+    <state width="893" height="206" key="GridCell.Tab.0.right/0.23.1440.825@0.23.1440.825" timestamp="1596130798063" />
+    <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.826@0.23.1440.826" timestamp="1596116100008" />
+    <state width="893" height="265" key="GridCell.Tab.1.bottom" timestamp="1596128973827">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="893" height="265" key="GridCell.Tab.1.bottom/0.23.1440.825@0.23.1440.825" timestamp="1596128973827" />
+    <state width="893" height="265" key="GridCell.Tab.1.center" timestamp="1596128973826">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="893" height="265" key="GridCell.Tab.1.center/0.23.1440.825@0.23.1440.825" timestamp="1596128973826" />
+    <state width="893" height="265" key="GridCell.Tab.1.left" timestamp="1596128973825">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="893" height="265" key="GridCell.Tab.1.left/0.23.1440.825@0.23.1440.825" timestamp="1596128973825" />
+    <state width="893" height="265" key="GridCell.Tab.1.right" timestamp="1596128973827">
+      <screen x="0" y="23" width="1440" height="825" />
+    </state>
+    <state width="893" height="265" key="GridCell.Tab.1.right/0.23.1440.825@0.23.1440.825" timestamp="1596128973827" />
     <state x="377" y="74" key="SettingsEditor" timestamp="1596032174513">
       <screen x="0" y="23" width="1440" height="826" />
     </state>
     <state x="377" y="74" key="SettingsEditor/0.23.1440.826@0.23.1440.826" timestamp="1596032174513" />
-    <state x="637" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1596055173276">
+    <state x="637" y="172" width="670" height="676" key="search.everywhere.popup" timestamp="1596128858405">
       <screen x="0" y="23" width="1440" height="825" />
     </state>
-    <state x="637" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1596055173276" />
+    <state x="637" y="172" width="670" height="676" key="search.everywhere.popup/0.23.1440.825@0.23.1440.825" timestamp="1596128858405" />
   </component>
 </project>
