@@ -317,7 +317,7 @@ public class MyArrayList<T extends Object>
     public <T>T[] toArray(T[] input)
     {
         
-        if (input.length <= storage.length)
+        if (input.length < storage.length)
         {
            
             input = (T[])new Object[storage.length];
