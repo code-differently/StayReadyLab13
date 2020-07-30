@@ -28,6 +28,28 @@ public class MyArrayList <T> {
         size++;
     }
 
+    public void add(int index, T t){
+
+        if(size == list.length){
+            size+=10;
+            trimToSize();
+            size -= 10;
+        }
+
+        if(list[index] == null) {
+            list[size] = t;
+            size++;
+        }
+        else{
+            for(int i = list.length-1; i > index; i--){
+                list[i] = list[i-1];
+            }
+            list[index] = t;
+            size++;
+        }
+    }
+
+
     public T get(int i){
 
        return list[i];

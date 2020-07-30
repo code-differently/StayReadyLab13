@@ -20,9 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/MyMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,52 +78,51 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.MyMapTest.hashCodeTest">
-    <configuration name="MyMapTest.containsKeyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MyMapTest">
+    <configuration name="MyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="containsKeyTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMapTest.entrySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="entrySetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMapTest.containsValueTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.keySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="containsValueTest" />
+      <option name="METHOD_NAME" value="keySetTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMapTest.equalsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.putAllTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="equalsTest" />
+      <option name="METHOD_NAME" value="putAllTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyMapTest.hashCodeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MyMapTest.valuesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="hashCodeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MyMapTest.removeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generics" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
-      <option name="METHOD_NAME" value="removeTest" />
+      <option name="METHOD_NAME" value="valuesTest" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -129,11 +130,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.MyMapTest.hashCodeTest" />
-        <item itemvalue="JUnit.MyMapTest.removeTest" />
-        <item itemvalue="JUnit.MyMapTest.containsValueTest" />
-        <item itemvalue="JUnit.MyMapTest.containsKeyTest" />
-        <item itemvalue="JUnit.MyMapTest.equalsTest" />
+        <item itemvalue="JUnit.MyMapTest" />
+        <item itemvalue="JUnit.MyMapTest.valuesTest" />
+        <item itemvalue="JUnit.MyMapTest.putAllTest" />
+        <item itemvalue="JUnit.MyMapTest.keySetTest" />
+        <item itemvalue="JUnit.MyMapTest.entrySetTest" />
       </list>
     </recent_temporary>
   </component>
@@ -178,25 +179,25 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="457" y="210" key="#com.intellij.ide.util.TreeClassChooserDialog/0.23.1440.877@0.23.1440.877" timestamp="1596050393292" />
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1596123063403">
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom" timestamp="1596131003767">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596123063403" />
+    <state width="1398" height="245" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1596131003767" />
     <state width="1398" height="231" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1596061343242" />
-    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1596123063401">
+    <state width="1398" height="245" key="GridCell.Tab.0.center" timestamp="1596131003765">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596123063401" />
+    <state width="1398" height="245" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1596131003765" />
     <state width="1398" height="231" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1596061343240" />
-    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1596123063400">
+    <state width="1398" height="245" key="GridCell.Tab.0.left" timestamp="1596131003764">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596123063400" />
+    <state width="1398" height="245" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1596131003764" />
     <state width="1398" height="231" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1596061343239" />
-    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1596123063402">
+    <state width="1398" height="245" key="GridCell.Tab.0.right" timestamp="1596131003766">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596123063402" />
+    <state width="1398" height="245" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1596131003766" />
     <state width="1398" height="231" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1596061343241" />
     <state x="221" y="63" key="SettingsEditor" timestamp="1596036647544">
       <screen x="0" y="23" width="1440" height="877" />

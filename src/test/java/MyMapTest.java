@@ -98,6 +98,54 @@ public class MyMapTest {
     }
 
     @Test
+    public void entrySetTest() {
+        map.put(1, 4);
+        map.put(2, 3);
+        map.put(3, 2);
+        map.put(4, 1);
+
+
+        Assert.assertEquals("1=4 2=3 3=2 4=1", map.entrySet().getSet());
+    }
+
+    @Test
+    public void keySetTest() {
+        map.put(1, 4);
+        map.put(2, 3);
+        map.put(3, 2);
+        map.put(4, 1);
+
+
+        Assert.assertEquals("1 2 3 4", map.keySet().getSet());
+    }
+
+    @Test
+    public void valuesTest() {
+        map.put(1, 4);
+        map.put(2, 3);
+        map.put(3, 2);
+        map.put(4, 1);
+
+
+        Assert.assertEquals("4 3 2 1", map.values().getSet());
+    }
+
+    @Test
+    public void putAllTest(){
+        MyMap<Integer, Integer> map2 = new MyMap<>();
+        map.put(1, 4);
+        map.put(2, 3);
+        map.put(3, 2);
+        map.put(4, 1);
+        map2.put(1, 5);
+        map2.put(2, 4);
+        map2.put(3, 3);
+        map2.put(4, 2);
+        map.putAll(map2);
+        Assert.assertEquals("1=5 2=4 3=3 4=2", map.getMap());
+    }
+
+    @Test
     public void equalsTest() {
         MyMap<Integer, Integer> map2 = new MyMap<>();
         map.put(1, 4);

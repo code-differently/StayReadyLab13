@@ -28,6 +28,22 @@ public class MyArrayListTest {
     }
 
     @Test
+    public void addTest2() {
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(6);
+        arr.add(7);
+        arr.add(8);
+        arr.add(9);
+        arr.add(10);
+        arr.add(4,5);
+
+        Assert.assertEquals("1 2 3 4 5 6 7 8 9 10", arr.getList());
+    }
+
+    @Test
     public void getTest() {
         arr.add(1);
         arr.add(2);

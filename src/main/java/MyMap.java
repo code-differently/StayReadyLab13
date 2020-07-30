@@ -75,6 +75,44 @@ public class MyMap<K, V> {
         }
         return output.trim();
     }
+
+    public MySet<String> entrySet(){
+        MySet <String> output = new MySet<>();
+        key = Arrays.copyOf(key, size);
+        value = Arrays.copyOf(value, size);
+        for(int i = 0; i < key.length; i++){
+            output.add(key[i]+"="+value[i]);
+        }
+        return output;
+    }
+
+    public MySet<K> keySet(){
+        MySet <K> output = new MySet<>();
+        key = Arrays.copyOf(key, size);
+        value = Arrays.copyOf(value, size);
+        for(int i = 0; i < key.length; i++){
+            output.add(key[i]);
+        }
+        return output;
+    }
+
+    public MySet<V> values(){
+        MySet <V> output = new MySet<>();
+        key = Arrays.copyOf(key, size);
+        value = Arrays.copyOf(value, size);
+        for(int i = 0; i < key.length; i++){
+            output.add(value[i]);
+        }
+        return output;
+    }
+
+    public void putAll(MyMap<K, V> map){
+        K [] arr = (K[]) map.keySet().toArray();
+        for(int i = 0; i < map.size(); i++) {
+            put(arr[i], map.get(arr[i]));
+        }
+    }
+
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
