@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.Arrays;
 
 public class MyArrayList <T> {
@@ -19,22 +20,14 @@ public class MyArrayList <T> {
 
     public void add(T t){
 
-        if(size == list.length){
-            size+=10;
-            trimToSize();
-            size -= 10;
-        }
+       ensureCapacity(size);
         list[size] = t;
         size++;
     }
 
     public void add(int index, T t){
 
-        if(size == list.length){
-            size+=10;
-            trimToSize();
-            size -= 10;
-        }
+        ensureCapacity(size);
 
         if(list[index] == null) {
             list[size] = t;
@@ -66,6 +59,15 @@ public class MyArrayList <T> {
         trimToSize();
     }
 
+    public void remove(int i){
+        while(i < list.length-1) {
+            list[i] = list[i + 1];
+            i++;
+        }
+        size--;
+        trimToSize();
+    }
+
     public void set(int i, T t){
 
         list[i] = t;
@@ -81,7 +83,7 @@ public class MyArrayList <T> {
        return list[0] == "" || list[0] == null;
     }
 
-    public T[] toArray(){
+    public Object[] toArray(){
         trimToSize();
         return list;
     }
@@ -98,6 +100,22 @@ public class MyArrayList <T> {
             }
         }
         return -1;
+    }
+
+    public int lastIndexOf(T t){
+        int lIndex = -1;
+        for(int i = 0; i < list.length; i++){
+            if(list[i] == t){
+                lIndex = i;
+            }
+        }
+        return lIndex;
+    }
+
+    public Object clone(){
+        MyArrayList<T> clone = new MyArrayList<>();
+        clone.addAll(this);
+        return clone;
     }
 
     public boolean contains(T t){
@@ -121,6 +139,60 @@ public class MyArrayList <T> {
 
     public void trimToSize(){
        list = Arrays.copyOf(list, size);
+    }
+
+    public void addAll(MyArrayList<T> list){
+        T [] t = (T[]) list.toArray();
+        for(int i = 0; i < t.length; i++) {
+            add(t[i]);
+        }
+    }
+    public void addAll(int index, MyArrayList<T> list){
+        T [] t = (T[]) list.toArray();
+        for(int i = 0; i < t.length; i++) {
+            add(index + i, t[i]);
+        }
+    }
+
+    public void removeAll(MyArrayList<T> list){
+        T [] t= (T[]) list.toArray();
+        for(int i = 0; i < t.length; i++) {
+            remove(t[i]);
+        }
+    }
+
+    public void retainAll(MyArrayList<T> list){
+        T [] t = (T[]) toArray();
+        for(int i = 0; i < size(); i++) {
+            if(!list.contains(t[i])) {
+                remove(t[i]);
+                i = 0;
+            }
+        }
+    }
+
+    public MyArrayList<T> subList(int f, int s){
+        MyArrayList<T> newList = new MyArrayList<>();
+        while(f < s) {
+            newList.add(list[f]);
+            f++;
+        }
+        return newList;
+    }
+
+    public void removeRange(int f, int s){
+        while(f < s) {
+            remove(list[f]);
+            s--;
+        }
+    }
+
+    public void ensureCapacity(int min){
+        if(size == list.length){
+            size+=10;
+            trimToSize();
+            size -= 10;
+        }
     }
 
 

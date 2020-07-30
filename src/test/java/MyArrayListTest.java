@@ -61,7 +61,18 @@ public class MyArrayListTest {
         arr.add(3);
         arr.add(4);
         arr.add(5);
-        arr.remove(3);
+        arr.remove((Integer) 3);
+        Assert.assertEquals("1 2 4 5", arr.getList());
+    }
+
+    @Test
+    public void removeTest2() {
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+        arr.remove(2);
         Assert.assertEquals("1 2 4 5", arr.getList());
     }
 
@@ -121,6 +132,17 @@ public class MyArrayListTest {
     }
 
     @Test
+    public void lastIndexOfTest() {
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(2);
+        arr.add(1);
+
+        Assert.assertEquals(4, arr.lastIndexOf(1));
+    }
+
+    @Test
     public void getListTest() {
 
         Assert.assertEquals("", arr.getList());
@@ -135,6 +157,112 @@ public class MyArrayListTest {
         arr.add(5);
 
         Assert.assertEquals(true, arr.contains(5));
+    }
+
+    @Test
+    public void addAllTest() {
+        MyArrayList<Integer> arr2 = new MyArrayList<>();
+        MyArrayList<Integer> exp = new MyArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr2.add(4);
+        arr2.add(5);
+        exp.add(1);
+        exp.add(2);
+        exp.add(3);
+        exp.add(4);
+        exp.add(5);
+        arr.addAll(arr2);
+        Assert.assertEquals(exp.getList(), arr.getList());
+    }
+
+    @Test
+    public void addAllTest2() {
+        MyArrayList<Integer> arr2 = new MyArrayList<>();
+        MyArrayList<Integer> exp = new MyArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr2.add(4);
+        arr2.add(5);
+        exp.add(1);
+        exp.add(4);
+        exp.add(5);
+        exp.add(2);
+        exp.add(3);
+        arr.addAll(1, arr2);
+        Assert.assertEquals(exp.getList(), arr.getList());
+    }
+
+    @Test
+    public void removeAllTest() {
+        MyArrayList<Integer> arr2 = new MyArrayList<>();
+        MyArrayList<Integer> exp = new MyArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr2.add(2);
+        exp.add(1);
+        exp.add(3);
+
+        arr.removeAll(arr2);
+        Assert.assertEquals(exp.getList(), arr.getList());
+    }
+
+    @Test
+    public void retainAllTest() {
+        MyArrayList<Integer> arr2 = new MyArrayList<>();
+        MyArrayList<Integer> exp = new MyArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr2.add(2);
+        exp.add(2);
+
+        arr.retainAll(arr2);
+        Assert.assertEquals(exp.getList(), arr.getList());
+    }
+
+    @Test
+    public void subListTest() {
+        MyArrayList<Integer> exp = new MyArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+        exp.add(1);
+        exp.add(2);
+        exp.add(3);
+
+        Assert.assertEquals(exp.getList(), arr.subList(0, 3).getList());
+    }
+
+    @Test
+    public void removeRangeTest() {
+        MyArrayList<Integer> exp = new MyArrayList<>();
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+        exp.add(4);
+        exp.add(5);
+        arr.removeRange(0, 3);
+
+        Assert.assertEquals(exp.getList(), arr.getList());
+    }
+
+    @Test
+    public void cloneTest(){
+        arr.add(1);
+        arr.add(2);
+        arr.add(3);
+        arr.add(4);
+        arr.add(5);
+
+        Assert.assertNotEquals(arr, arr.clone());
     }
 
 
