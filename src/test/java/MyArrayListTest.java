@@ -3,26 +3,35 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 public class MyArrayListTest{
-    MyArrayList<String> intArrListNoLength;
+    MyArrayList<String> stringArrListNoLength;
     MyArrayList<Integer> intArrListWithLength;
 
     @Before
     public void setup() {
-        intArrListNoLength = new MyArrayList<>();
+        stringArrListNoLength = new MyArrayList<>();
         intArrListWithLength = new MyArrayList<>(3);
     }
 
     @Test
-    public void myArrayListOneArgSizeTest() {
+    public void myArrayListZeroArgConstructorSizeTest() {
         int expectedSize = 1;
 
-        int actualSize = intArrListNoLength.size();
+        int actualSize = stringArrListNoLength.size();
 
         assertEquals(expectedSize, actualSize);
     }
 
     @Test
-    public void myArrayListTwoArgSizeTest() {
+    public void myArrayListOneArgConstructorSizeTest() {
+        int expectedSize = 3;
+
+        int actualSize = intArrListWithLength.size();
+
+        assertEquals(expectedSize, actualSize);
+    }
+
+    @Test
+    public void sizeTest() {
         int expectedSize = 3;
 
         int actualSize = intArrListWithLength.size();
@@ -35,7 +44,7 @@ public class MyArrayListTest{
         int expectedValue = 24;
 
         intArrListWithLength.add(24);
-        int actualValue = intArrListWithLength.get(0);
+        int actualValue = (int) intArrListWithLength.get(0);
 
         assertEquals(expectedValue, actualValue);
     }
@@ -45,7 +54,7 @@ public class MyArrayListTest{
         int expectedValue = 12;
 
         intArrListWithLength.add(2, 12);
-        int actualValue = intArrListWithLength.get(2);
+        int actualValue = (int) intArrListWithLength.get(2);
 
         assertEquals(expectedValue, actualValue);
     }
@@ -69,7 +78,7 @@ public class MyArrayListTest{
 
         intArrListWithLength.add(2, 34);
         intArrListWithLength.set(2, 46);
-        int actualReturnValue = intArrListWithLength.get(2);
+        int actualReturnValue = (int) intArrListWithLength.get(2);
 
         assertEquals(expectedReturnValue, actualReturnValue);
     }
@@ -79,7 +88,7 @@ public class MyArrayListTest{
         int expectedReturnValue = 6;
 
         intArrListWithLength.add(6);
-        int actualReturnValue = intArrListWithLength.get(0);
+        int actualReturnValue = (int) intArrListWithLength.get(0);
 
         assertEquals(expectedReturnValue, actualReturnValue);
     }
