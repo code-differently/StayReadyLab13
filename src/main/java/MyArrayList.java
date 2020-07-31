@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class MyArrayList <E>{
@@ -18,17 +17,24 @@ public class MyArrayList <E>{
         this.size = size;
     }
 
-    @SuppressWarnings("unchecked")
-//    public void populateArray(Object elementToSet) {
-//        Arrays.fill(expansiveArray, (E) elementToSet);
-//    }
-
     public int size() {
         return expansiveArray.length;
     }
 
     public void add(E element) {
+        if(capacity == size) {
+            resize();
+        }
+        expansiveArray[capacity] = element;
+        capacity++;
+    }
 
+    public void add(int index, E element) {
+        if(capacity == size) {
+            resize();
+        }
+        expansiveArray[index] = element;
+        capacity++;
     }
 
     @SuppressWarnings("unchecked")
@@ -36,25 +42,12 @@ public class MyArrayList <E>{
         return (E) expansiveArray[index];
     }
 
-    //@SuppressWarnings("unchecked")
-//    public E set(int index, E element) {
-//        E temp = (E) expansiveArray[index];
-//        expansiveArray[index] = element;
-//        return temp;
-//    }
+    public void set(int index, E element) {
+        expansiveArray[index] = element;
+    }
 
-    @SuppressWarnings("unchecked")
-    public E[] resize() {
-        //creating a new array
+    private void resize() {
         size = size * 2;
-        E[] newArray =  (E[]) new Object[size];
-
-        int index = 0;
-        for(Object element: expansiveArray) {
-            newArray[index] = (E) element;
-            index++;
-        }
-
-        return newArray;
+        expansiveArray = Arrays.copyOf(expansiveArray, size);
     }
 }
