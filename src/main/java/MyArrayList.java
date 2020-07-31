@@ -1,5 +1,6 @@
 import java.util.Arrays;
 import java.util.Collection;
+import java.util.Iterator;
 
 public class MyArrayList<T> {
     private int lastIndex;
@@ -13,7 +14,9 @@ public class MyArrayList<T> {
 
     public MyArrayList(int size) {
         this();
-        this.arr = (T[]) (new Object[size]);
+        if (size < 0)
+            throw new IllegalArgumentException("Illegal Capacity: " + size);
+        this.arr = (T[]) new Object[size];
         this.lastIndex = size - 1;
     }
 
@@ -57,7 +60,7 @@ public class MyArrayList<T> {
 
     // Removes all of the elements from this list
     public void clear() {
-        lastIndex++;
+        lastIndex = 0;
         arr = (T[]) (new Object[defaultSize]);
     }
 
@@ -76,6 +79,7 @@ public class MyArrayList<T> {
     public void ensureCapacity(int minCapacity) {
         if (arr.length < minCapacity) {
             arr = Arrays.copyOf(arr, arr.length + (minCapacity - arr.length));
+            lastIndex = arr.length - 1;
         }
     }
 
@@ -95,6 +99,15 @@ public class MyArrayList<T> {
         return -1;
     }
 
+    public boolean isEmpty() {
+        for (int i = 0; i < arr.length; i++) {
+            if (arr[i] != null) {
+                return false;
+            }
+        }
+        return true;
+    }
+
     // Removes the element at the specified position in this list
     public T remove(int index) {
         T elementRemoved = arr[index];
@@ -104,6 +117,11 @@ public class MyArrayList<T> {
         arr = Arrays.copyOf(arr, arr.length - 1);
         lastIndex--;
         return elementRemoved;
+    }
+
+    public T set(int index, T item) {
+        arr[index] = item;
+        return arr[index];
     }
 
     // Returns the number of elements in this list

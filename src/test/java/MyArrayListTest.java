@@ -100,24 +100,42 @@ public class MyArrayListTest {
 
     @Test
     public void ensureCapacityTest() {
-        //INCOMPLETE
         MyArrayList<String> obj = new MyArrayList<>();
 
-        String stringNotInserted = "5";
-        obj.add("blah");
+        obj.ensureCapacity(5);
 
-        assertFalse(obj.contains(stringNotInserted));
+        assertTrue(obj.size() == 5);
     }
 
     @Test
     public void indexOfTest() {
-        //INCOMPLETE
         MyArrayList<String> obj = new MyArrayList<>();
+        String objToAdd = "blah";
+        String objToAdd2 = "lah";
 
-        String stringNotInserted = "5";
-        obj.add("blah");
+        int expectedIndex = 1;
+        obj.add(objToAdd);
+        obj.add(expectedIndex, objToAdd2);
 
-        assertFalse(obj.contains(stringNotInserted));
+        assertEquals(expectedIndex, obj.indexOf(objToAdd2));
+    }
+
+    @Test
+    public void isEmptyTest() {
+        MyArrayList<String> obj = new MyArrayList<>(5);
+        String[] stuff = {"hi", "bye", "sigh"};
+        ArrayList<String> elems = new ArrayList<>(Arrays.asList(stuff));
+
+        obj.addAll(elems);
+
+        assertFalse(obj.isEmpty());
+    }
+
+    @Test
+    public void isEmptyTest2() {
+        MyArrayList<String> obj = new MyArrayList<>(5);
+
+        assertTrue(obj.isEmpty());
     }
 
     @Test
@@ -142,5 +160,19 @@ public class MyArrayListTest {
         String expected = "bye";
 
         assertEquals(expected, obj.get(2));
+    }
+
+    @Test
+    public void setTest() {
+        MyArrayList<String> obj = new MyArrayList<>();
+        String[] stuff = {"hi", "bye", "sigh"};
+        ArrayList<String> elems = new ArrayList<>(Arrays.asList(stuff));
+
+        obj.addAll(elems);
+        int index = 1;
+        String expected = "overwrite";
+        obj.set(index, expected);
+
+        assertEquals(expected, obj.get(index));
     }
 }
