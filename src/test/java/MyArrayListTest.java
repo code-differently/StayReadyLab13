@@ -14,7 +14,7 @@ public class MyArrayListTest{
 
     @Test
     public void myArrayListOneArgSizeTest() {
-        int expectedSize = 0;
+        int expectedSize = 1;
 
         int actualSize = intArrListNoLength.size();
 
@@ -82,5 +82,69 @@ public class MyArrayListTest{
         int actualReturnValue = intArrListWithLength.get(0);
 
         assertEquals(expectedReturnValue, actualReturnValue);
+    }
+
+    @Test
+    public void clearTest() {
+        int expectedSize = 3;
+
+        intArrListWithLength.clear();
+        int actualSize = intArrListWithLength.size();
+
+        assertEquals(expectedSize, actualSize);
+    }
+
+    @Test
+    public void listIsEmptyTest() {
+
+        boolean actualValue = intArrListWithLength.isEmpty();
+
+        assertTrue(actualValue);
+    }
+
+    @Test
+    public void listIsNotEmptyTest() {
+
+        intArrListWithLength.add(2);
+        boolean actualValue = intArrListWithLength.isEmpty();
+
+        assertFalse(actualValue);
+    }
+
+    @Test
+    public void listContainsElementTest() {
+        intArrListWithLength.add(5);
+        boolean containsFive = intArrListWithLength.contains(5);
+
+        assertTrue(containsFive);
+    }
+
+    @Test
+    public void listDoesNotContainElementTest() {
+        intArrListWithLength.add(4);
+        boolean containsValue = intArrListWithLength.contains(5);
+
+        assertFalse(containsValue);
+    }
+
+    @Test
+    public void removeElementAtIndexTest() {
+        int expectedElement = 1;
+
+        intArrListWithLength.add(1);
+        int actualElement = intArrListWithLength.remove(0);
+
+        assertEquals(expectedElement, actualElement);
+    }
+
+    @Test
+    public void removeSpecificElementWithoutKnowingIndexTest() {
+        int expectedElement = 2;
+
+        intArrListWithLength.add(1);
+        intArrListWithLength.add(2);
+        int actualElement = intArrListWithLength.removeElement(2);
+
+        assertEquals(expectedElement, actualElement);
     }
 }
