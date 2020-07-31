@@ -3,7 +3,7 @@ import java.util.HashSet;
 import java.util.Iterator;
 import java.util.Set;
 
-public class MySet<T extends Object> 
+public class MySet<T> implements Collection<T>
 {
     private MyArrayList <T> myArrayList = new MyArrayList<>();
 
@@ -25,7 +25,7 @@ public class MySet<T extends Object>
         
     }
 
-    public boolean addAll(Collection <T> c)
+    public boolean addAll(Collection <? extends T> c)
     {
         boolean didChange = false;
         Object [] getC = c.toArray();
@@ -52,7 +52,7 @@ public class MySet<T extends Object>
         myArrayList.clear();
     }
 
-    public boolean contains(T object)
+    public boolean contains(Object object)
     {
         if (myArrayList.contains(object))
         {
@@ -61,7 +61,7 @@ public class MySet<T extends Object>
         return false;
     }
 
-    public boolean containsAll(Collection <T> c)
+    public boolean containsAll(Collection <?> c)
     {
         boolean didContain = false;
         Object [] getC = c.toArray();
@@ -86,7 +86,10 @@ public class MySet<T extends Object>
         {
             if (((Set)ob).size() == myArrayList.size())
             {
-                return true;
+                if (this.containsAll(((Set)ob)))
+                {
+                    return true;
+                }
             }
             
         }
@@ -110,7 +113,7 @@ public class MySet<T extends Object>
 
     public Iterator<T> iterator()
     {
-        return myArrayList.iterate();
+        return myArrayList.iterator();
     }
 
     public boolean remove(Object ob)
@@ -124,12 +127,12 @@ public class MySet<T extends Object>
         return false;
     }
 
-    public boolean removeAll(Collection<T> c)
+    public boolean removeAll(Collection<?> c)
     {
         return myArrayList.removeAll(c);
     }
 
-    public boolean retainAll(Collection<T> c)
+    public boolean retainAll(Collection<?> c)
     {
         return myArrayList.retainAll(c);
     }
@@ -143,4 +146,7 @@ public class MySet<T extends Object>
     {
         return myArrayList.toArray(arr);
     }
+    
+
+  
 }

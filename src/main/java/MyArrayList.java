@@ -6,7 +6,7 @@ import java.util.List;
 import java.util.ListIterator;
 import org.apache.commons.lang.ArrayUtils;
 
-public class MyArrayList<T extends Object> 
+public class MyArrayList<T> implements Collection<T>
 {
    private Object [] storage = new Object[0];
 
@@ -20,20 +20,12 @@ public class MyArrayList<T extends Object>
         storage = new Object[size];
     }
 
-    //Method to look at the storage
-    public void lookAtList()
-    {
-        for (int i = 0; i< storage.length;i++)
-        {
-            System.out.println(storage[i]);
-        }
-    }
-
     public T get(int i)
     {
         return (T)(storage[i]);
     }
-
+    
+    @Override
     public boolean add(T element)
     {
         Object [] temp = storage;
@@ -73,8 +65,8 @@ public class MyArrayList<T extends Object>
         storage = newArray;
     }
 
-    //Need to be worked on
-    public boolean addAll(Collection<T>c)
+    @Override
+    public boolean addAll(Collection<? extends T>c)
     {
         Object [] returnArray = new Object[storage.length+c.size()];
         Object [] newArray = c.toArray();
@@ -126,7 +118,8 @@ public class MyArrayList<T extends Object>
         return storage.clone();
     }
 
-    public boolean contains(T object)
+    @Override
+    public boolean contains(Object object)
     {
         for (int i = 0; i < storage.length;i++)
         {
@@ -180,7 +173,7 @@ public class MyArrayList<T extends Object>
         return false;
     }
 
-    public Iterator<T> iterate()
+    public Iterator<T> iterator()
     {
        return (Iterator<T>)Arrays.stream(storage).iterator();
        
@@ -216,7 +209,8 @@ public class MyArrayList<T extends Object>
         return removed;
     }
 
-    public boolean remove(T element)
+    @Override
+    public boolean remove(Object element)
     {
        for (int i = 0; i < storage.length;i++)
        {
@@ -229,7 +223,8 @@ public class MyArrayList<T extends Object>
         return false;
     }
 
-    public boolean removeAll(Collection <T> c)
+    @Override
+    public boolean removeAll(Collection <?> c)
     {
         boolean didRemove = false;
        for (int i = 0; i < storage.length;i++)
@@ -266,7 +261,8 @@ public class MyArrayList<T extends Object>
        
     }
 
-    public boolean retainAll(Collection<T> c)
+    @Override
+    public boolean retainAll(Collection<?> c)
     {
         boolean didRetain = false;
         for (int i = 0; i < storage.length;i++)
@@ -314,6 +310,7 @@ public class MyArrayList<T extends Object>
         return storage;
     }
 
+    @Override
     public <T>T[] toArray(T[] input)
     {
         
@@ -349,6 +346,19 @@ public class MyArrayList<T extends Object>
        {
            storage = Arrays.copyOf(storage, size());
        }
+    }
+
+    @Override
+    public boolean containsAll(Collection<?> c) 
+    {
+        for (Object get : c)
+        {
+            if (!contains(get))
+            {
+                return false;
+            }
+        }
+        return true;
     }
         
     

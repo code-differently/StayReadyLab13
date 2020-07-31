@@ -173,7 +173,7 @@ public class MyArrayTest
         myList.add(5);
         myList.add(9);
 
-        Iterator<Integer> iterator = myList.iterate();
+        Iterator<Integer> iterator = myList.iterator();
 
         assertTrue(iterator.next() == 4);
         assertTrue(iterator.next() == 5);
