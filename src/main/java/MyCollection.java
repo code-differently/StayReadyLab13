@@ -2,8 +2,8 @@ import java.util.Arrays;
 import java.util.Collection;
 import java.util.Iterator;
 import java.util.stream.IntStream;
-
-public class MyCollection <E> {
+//cannot instantiate MyCollection, have to have MyCollection point to subclasses
+public abstract class MyCollection <E> {
     private Object[] expansiveArray;
     private int capacity;
     private int size;
