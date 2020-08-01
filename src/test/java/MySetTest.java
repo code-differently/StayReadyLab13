@@ -132,9 +132,9 @@ public class MySetTest {
         setWithValues.add(12);
         setWithValues.add(3);
 
-        boolean result = intSetWithLength.removeAll(setWithValues);
+        boolean ableToRemove = intSetWithLength.removeAll(setWithValues);
 
-        assertTrue(result);
+        assertFalse(ableToRemove);
     }
 
     @Test
@@ -155,7 +155,4 @@ public class MySetTest {
 
         assertTrue(intSetWithLength.equals(set));
     }
-
-
-
 }

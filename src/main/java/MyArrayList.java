@@ -1,3 +1,5 @@
+import java.util.Collection;
+
 public class MyArrayList <E> extends MyCollection<E>{
 
     public MyArrayList() {

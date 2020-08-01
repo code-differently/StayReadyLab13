@@ -124,13 +124,11 @@ public class MyArrayListTest{
 
     @Test
     public void removeSpecificElementWithoutKnowingIndexTest() {
-        int expectedElement = 2;
-
         intArrListWithLength.add(1);
         intArrListWithLength.add(2);
-        int actualElement = intArrListWithLength.removeElement(2);
+        boolean removalSuccessful = intArrListWithLength.removeElement(2);
 
-        assertEquals(expectedElement, actualElement);
+        assertTrue(removalSuccessful);
     }
 
     @Test

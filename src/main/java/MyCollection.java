@@ -1,9 +1,9 @@
 import java.util.Arrays;
+import java.util.Collection;
 import java.util.Iterator;
 import java.util.stream.IntStream;
 
-//cannot instantiate MyCollection, have to have MyCollection point to subclasses
-public abstract class MyCollection <E>{
+public class MyCollection <E> {
     private Object[] expansiveArray;
     private int capacity;
     private int size;
@@ -34,8 +34,9 @@ public abstract class MyCollection <E>{
         return capacity == 0;
     }
 
-    public boolean contains(E element) {
-        return Arrays.asList(expansiveArray).contains(element);
+    @SuppressWarnings("unchecked")
+    public boolean contains(Object object) {
+        return Arrays.asList(expansiveArray).contains((E) object);
     }
 
     public void clear() {
@@ -51,7 +52,7 @@ public abstract class MyCollection <E>{
     }
 
     @SuppressWarnings("unchecked")
-    public E removeElement(E element) {
+    public boolean removeElement(E element) {
         boolean elementExists = contains(element);
         E elementAtIndex = (E) new Object();
         if(elementExists) {
@@ -61,7 +62,7 @@ public abstract class MyCollection <E>{
                 remove(firstOccurrenceOfElement);
             }
         }
-        return elementAtIndex;
+        return elementExists;
     }
 
     private int findFirstOccurrenceOfElement(E element) {

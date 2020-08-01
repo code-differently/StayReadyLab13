@@ -1,4 +1,6 @@
-public class MySet <E> extends MyCollection<E>{
+import java.util.Collection;
+
+public class MySet <E> extends MyCollection<E> implements Collection<E> {
     public MySet() {
         super();
     }
@@ -7,55 +9,79 @@ public class MySet <E> extends MyCollection<E>{
         super(size);
     }
 
-    public boolean add(E element) {
+    @SuppressWarnings("unchecked")
+    @Override
+    public boolean add(Object element) {
         if (getCapacity() == size()) {
             resize();
         }
         boolean successful = false;
         if (!contains(element)) {
-            setElementAtIndex(getCapacity(), element);
+            setElementAtIndex(getCapacity(), (E) element);
             setCapacity(getCapacity() + 1);
             successful = true;
         }
         return successful;
     }
 
+    @SuppressWarnings("unchecked")
+    @Override
+    public boolean remove(Object object) {
+        return super.removeElement((E) object);
+    }
+
+    @Override
+    public boolean contains(Object object) {
+        return super.contains(object);
+    }
+
+    @Override
     public Object[] toArray() {
         return getExpansiveArray();
     }
 
     @SuppressWarnings("unchecked")
-    public boolean addAll(MySet<E> set) {
+    @Override
+    public <T> T[] toArray(T[] a) {
+        return (T[]) getExpansiveArray();
+    }
+
+    @SuppressWarnings("unchecked")
+    @Override
+    public boolean addAll(Collection collection) {
         boolean addingAllSuccessful = false;
-        for(Object element: set.getExpansiveArray()) {
+        for(Object element: collection) {
             addingAllSuccessful = add((E) element);
         }
         return addingAllSuccessful;
     }
 
     @SuppressWarnings("unchecked")
-    public boolean containsAll(MySet<E> set) {
+    @Override
+    public boolean containsAll(Collection<?> collection) {
         boolean containsAllSuccessful = false;
-        for(Object element: set.getExpansiveArray()) {
+        for(Object element: collection) {
             containsAllSuccessful = contains((E) element);
         }
         return containsAllSuccessful;
     }
 
     @SuppressWarnings("unchecked")
-    public boolean removeAll(MySet<E> set) {
+    @Override
+    public boolean removeAll(Collection<?> collection) {
         boolean removingAllSuccessful = false;
 
-        for(Object element: set.getExpansiveArray()) {
-            removingAllSuccessful = removeElement((E) element) != (E) new Object();
+        for(Object element: collection) {
+            removingAllSuccessful = removeElement((E) element);
         }
         return removingAllSuccessful;
     }
 
     @SuppressWarnings("unchecked")
-    public boolean retainAll(MySet<E> set) {
+    @Override
+    public boolean retainAll(Collection<?> collection) {
         int count = 0;
-        for(Object element: set.getExpansiveArray()) {
+        for(Object element: collection) {
             if(!contains((E) element)) {
                removeElement((E) element);
                count++;
@@ -64,6 +90,7 @@ public class MySet <E> extends MyCollection<E>{
         return getCapacity() == count;
     }
 
+    @Override
     public boolean equals(Object object) {
         boolean theSame = false;
         if(object instanceof MySet && super.size() == ((MySet) object).size()) {
@@ -71,7 +98,4 @@ public class MySet <E> extends MyCollection<E>{
         }
         return theSame;
     }
-
-
-
 }
