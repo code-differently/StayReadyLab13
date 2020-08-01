@@ -2,10 +2,10 @@ import java.util.Arrays;
 import java.util.stream.IntStream;
 
 public class MyCollection <E> {
-    protected Object[] expansiveArray;
-    protected int capacity;
-    protected int size;
-    protected final int RESIZE_FACTOR = 2;
+    private Object[] expansiveArray;
+    private int capacity;
+    private int size;
+    private final int RESIZE_FACTOR = 2;
 
     public MyCollection() {
         expansiveArray = new Object[1];
@@ -23,7 +23,7 @@ public class MyCollection <E> {
         return expansiveArray.length;
     }
 
-    protected void resize() {
+    private void resize() {
         size = size * RESIZE_FACTOR;
         expansiveArray = Arrays.copyOf(expansiveArray, size);
     }
@@ -52,7 +52,8 @@ public class MyCollection <E> {
         boolean elementExists = contains(element);
         E elementAtIndex = (E) new Object();
         if(elementExists) {
-            int firstOccurrenceOfElement = IntStream.range(0, expansiveArray.length)
+            int firstOccurrenceOfElement =
+                    IntStream.range(0, expansiveArray.length)
                     .filter(i -> element ==  expansiveArray[i])
                     .findFirst() // first occurrence
                     .orElse(-1); // No element found
@@ -63,4 +64,29 @@ public class MyCollection <E> {
         }
         return elementAtIndex;
     }
+
+    public Object[] getExpansiveArray() {
+        return expansiveArray;
+    }
+
+    public void setExpansiveArray(Object[] array) {
+        expansiveArray = array;
+    }
+
+    public void setElementAtIndex(int index, E element) {
+        expansiveArray[index] = element;
+    }
+
+    public int getCapacity() {
+        return capacity;
+    }
+
+    public void setCapacity(int capacity) {
+        this.capacity = capacity;
+    }
+
+    public void setSize(int size) {
+        this.size = size;
+    }
+
 }
