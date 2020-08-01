@@ -1,9 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.Iterator;
-import java.util.TreeSet;
-
 import static org.junit.Assert.*;
 
 public class MySetTest {
@@ -82,20 +79,9 @@ public class MySetTest {
     }
 
     @Test
-    public void addAllSuccessfulTest() {
-        TreeSet<Integer>setWithValues = new TreeSet<>();
+    public void addAllTest() {
+        MySet<Integer>setWithValues = new MySet<>();
         setWithValues.add(12);
-        setWithValues.add(3);
-
-        boolean result = intSetWithLength.addAll(setWithValues);
-
-        assertTrue(result);
-    }
-
-    @Test
-    public void addAllFailureTest() {
-        TreeSet<Integer>setWithValues = new TreeSet<>();
-        setWithValues.add(3);
         setWithValues.add(3);
 
         boolean result = intSetWithLength.addAll(setWithValues);
@@ -107,7 +93,7 @@ public class MySetTest {
     public void containsAllSuccessfulTest() {
         intSetWithLength.add(3);
         intSetWithLength.add(12);
-        TreeSet<Integer>setWithValues = new TreeSet<>();
+        MySet<Integer>setWithValues = new MySet<>();
         setWithValues.add(12);
         setWithValues.add(3);
 
@@ -119,19 +105,19 @@ public class MySetTest {
     @Test
     public void containsAllFailureTest() {
         intSetWithLength.add(12);
-        TreeSet<Integer>setWithValues = new TreeSet<>();
+        MySet<Integer>setWithValues = new MySet<>();
         setWithValues.add(12);
         setWithValues.add(3);
 
         boolean result = intSetWithLength.containsAll(setWithValues);
 
-        assertTrue(result);
+        assertFalse(result);
     }
 
     @Test
     public void removeAllSuccessfulTest() {
         intSetWithLength.add(12);
-        TreeSet<Integer>setWithValues = new TreeSet<>();
+        MySet<Integer>setWithValues = new MySet<>();
         setWithValues.add(12);
 
         boolean result = intSetWithLength.removeAll(setWithValues);
@@ -142,7 +128,7 @@ public class MySetTest {
     @Test
     public void removeAllFailureTest() {
         intSetWithLength.add(12);
-        TreeSet<Integer>setWithValues = new TreeSet<>();
+        MySet<Integer>setWithValues = new MySet<>();
         setWithValues.add(12);
         setWithValues.add(3);
 
@@ -154,7 +140,7 @@ public class MySetTest {
     @Test
     public void retainAllTest() {
         intSetWithLength.add(12);
-        TreeSet<Integer>setWithValues = new TreeSet<>();
+        MySet<Integer>setWithValues = new MySet<>();
         setWithValues.add(12);
         setWithValues.add(4);
 

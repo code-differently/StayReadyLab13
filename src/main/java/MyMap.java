@@ -1,8 +1,8 @@
 import java.util.Arrays;
-import java.util.stream.IntStream;
 
 public class MyMap <K, V> {
     //the keys and the values will be synced up via indexes
+    //choose MySet because keys need to be unique
     private MySet<K> keys;
     private MySet<V> values;
 
@@ -12,10 +12,12 @@ public class MyMap <K, V> {
     }
 
     public MyMap(MyMap<K, V> map) {
-          //set the keys of this object to the keys passed in
-          //do the same thing for the values
+        MySet<K> incomingKeys = map.keySet();
+        MySet<V> incomingValues = map.values();
         keys = new MySet<>();
         values = new MySet<>();
+        keys.addAll(incomingKeys);
+        values.addAll(incomingValues);
     }
 
     public int size() {
@@ -68,6 +70,10 @@ public class MyMap <K, V> {
 
     public MySet<K> keySet() {
         return keys;
+    }
+
+    public MySet<V> values() {
+        return values;
     }
 }
 

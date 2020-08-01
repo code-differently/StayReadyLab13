@@ -1,8 +1,4 @@
-import java.util.logging.Logger;
-import java.util.stream.IntStream;
-
 public class MyArrayList <E> extends MyCollection<E>{
-    private static final Logger logger = Logger.getLogger("src.main.java.MyArrayList");
 
     public MyArrayList() {
         super();

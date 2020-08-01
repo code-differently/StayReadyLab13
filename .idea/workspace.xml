@@ -21,10 +21,10 @@
   <component name="ChangeListManager">
     <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyCollection.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyCollection.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MyMap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/MySet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MyCollectionTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyCollectionTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MyMapTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/MySetTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
@@ -71,16 +71,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MyArrayListTest.setTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="generics" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
-      <option name="METHOD_NAME" value="setTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="MyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="generics" />
       <option name="PACKAGE_NAME" value="" />
@@ -110,13 +100,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MySetTest.addAllFailureTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="addAllFailureTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.All in generics" />
         <item itemvalue="JUnit.MyMapTest" />
+        <item itemvalue="JUnit.MySetTest.addAllFailureTest" />
         <item itemvalue="JUnit.MyMapTest.clearTest" />
         <item itemvalue="JUnit.MyMapTest.constructorNoArgsTest" />
-        <item itemvalue="JUnit.MyArrayListTest.setTest" />
       </list>
     </recent_temporary>
   </component>
@@ -158,10 +158,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="167" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1596309766995" />
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1596309965720">
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1596313342895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596309965720" />
+    <state x="574" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1596313342895" />
     <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1596234107508">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -170,38 +170,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="544" y="117" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1596202591008" />
-    <state width="1493" height="229" key="GridCell.Tab.0.bottom" timestamp="1596310201048">
+    <state width="1493" height="229" key="GridCell.Tab.0.bottom" timestamp="1596313606060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596310201048" />
-    <state width="1493" height="229" key="GridCell.Tab.0.center" timestamp="1596310201048">
+    <state width="1493" height="229" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596313606060" />
+    <state width="1493" height="229" key="GridCell.Tab.0.center" timestamp="1596313606060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596310201048" />
-    <state width="1493" height="229" key="GridCell.Tab.0.left" timestamp="1596310201048">
+    <state width="1493" height="229" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1596313606060" />
+    <state width="1493" height="229" key="GridCell.Tab.0.left" timestamp="1596313606060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596310201048" />
-    <state width="1493" height="229" key="GridCell.Tab.0.right" timestamp="1596310201048">
+    <state width="1493" height="229" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1596313606060" />
+    <state width="1493" height="229" key="GridCell.Tab.0.right" timestamp="1596313606060">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="229" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596310201048" />
-    <state width="1493" height="170" key="GridCell.Tab.1.bottom" timestamp="1596306545049">
+    <state width="1493" height="229" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1596313606060" />
+    <state width="1493" height="170" key="GridCell.Tab.1.bottom" timestamp="1596312806582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="170" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596306545049" />
-    <state width="1493" height="170" key="GridCell.Tab.1.center" timestamp="1596306545049">
+    <state width="1493" height="170" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1596312806582" />
+    <state width="1493" height="170" key="GridCell.Tab.1.center" timestamp="1596312806582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="170" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596306545049" />
-    <state width="1493" height="170" key="GridCell.Tab.1.left" timestamp="1596306545049">
+    <state width="1493" height="170" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1596312806582" />
+    <state width="1493" height="170" key="GridCell.Tab.1.left" timestamp="1596312806582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="170" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596306545049" />
-    <state width="1493" height="170" key="GridCell.Tab.1.right" timestamp="1596306545049">
+    <state width="1493" height="170" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1596312806582" />
+    <state width="1493" height="170" key="GridCell.Tab.1.right" timestamp="1596312806582">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596306545049" />
+    <state width="1493" height="170" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1596312806582" />
     <state x="277" y="0" key="SettingsEditor" timestamp="1596227078461">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -222,11 +222,6 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/MySetTest.java</url>
-          <line>113</line>
-          <option name="timeStamp" value="20" />
-        </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/test/java/MyArrayListTest.java</url>
           <line>60</line>

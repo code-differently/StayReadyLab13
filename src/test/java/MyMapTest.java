@@ -12,23 +12,24 @@ public class MyMapTest {
 
     @Test
     public void constructorNoArgsTest() {
-        MyMap<String, Integer> mapWithNoSize = new MyMap<>();;
         int expectedSize = 0;
 
-        int actualSize = mapWithNoSize.size();
+        int actualSize = foundingDatesOfCompanies.size();
 
         assertEquals(expectedSize, actualSize);
     }
 
-//    @Test
-//    public void constructorPassingMapTest() {
-//        MyMap<String, Integer> mapWithNoSize = new MyMap<>();;
-//        int expectedSize = 0;
-//
-//        int actualSize = mapWithNoSize.size();
-//
-//        assertEquals(expectedSize, actualSize);
-//    }
+    @Test
+    public void constructorPassingMapTest() {
+        int expectedSize = 1;
+        MyMap<String, Integer> newCompany = new MyMap<String, Integer>();
+        newCompany.put("Boeing",  1916);
+
+        foundingDatesOfCompanies = new MyMap<>(newCompany);
+        int actualSize = foundingDatesOfCompanies.size();
+
+        assertEquals(expectedSize, actualSize);
+    }
 
     @Test
     public void isEmptyTest() {
@@ -97,5 +98,16 @@ public class MyMapTest {
         String actualCompanyName = companies.getElementAtIndex(0);
 
         assertEquals(expectedCompanyName, actualCompanyName);
+    }
+
+    @Test
+    public void valuesTest() {
+        int expectedDate = 1966;
+
+        foundingDatesOfCompanies.put("Best Buy", 1966);
+        MySet <Integer> dates = foundingDatesOfCompanies.values();
+        int actualDate = dates.getElementAtIndex(0);
+
+        assertEquals(expectedDate, actualDate);
     }
 }

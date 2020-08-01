@@ -1,6 +1,3 @@
-import java.util.Collection;
-import java.util.Iterator;
-
 public class MySet <E> extends MyCollection<E>{
     public MySet() {
         super();
@@ -27,37 +24,40 @@ public class MySet <E> extends MyCollection<E>{
         return getExpansiveArray();
     }
 
-    public boolean addAll(Collection<? extends E> collection) {
+    @SuppressWarnings("unchecked")
+    public boolean addAll(MySet<E> set) {
         boolean addingAllSuccessful = false;
-        for(E element: collection) {
-            addingAllSuccessful = add(element);
+        for(Object element: set.getExpansiveArray()) {
+            addingAllSuccessful = add((E) element);
         }
         return addingAllSuccessful;
     }
 
-    public boolean containsAll(Collection<? extends E> collection) {
+    @SuppressWarnings("unchecked")
+    public boolean containsAll(MySet<E> set) {
         boolean containsAllSuccessful = false;
-        for(E element: collection) {
-            containsAllSuccessful = contains(element);
+        for(Object element: set.getExpansiveArray()) {
+            containsAllSuccessful = contains((E) element);
         }
         return containsAllSuccessful;
     }
 
     @SuppressWarnings("unchecked")
-    public boolean removeAll(Collection<? extends E> collection) {
+    public boolean removeAll(MySet<E> set) {
         boolean removingAllSuccessful = false;
 
-        for(E element: collection) {
-            removingAllSuccessful = removeElement(element) != (E) new Object();
+        for(Object element: set.getExpansiveArray()) {
+            removingAllSuccessful = removeElement((E) element) != (E) new Object();
         }
         return removingAllSuccessful;
     }
 
-    public boolean retainAll(Collection<? extends E> collection) {
+    @SuppressWarnings("unchecked")
+    public boolean retainAll(MySet<E> set) {
         int count = 0;
-        for(E element: collection) {
-            if(!contains(element)) {
-               removeElement(element);
+        for(Object element: set.getExpansiveArray()) {
+            if(!contains((E) element)) {
+               removeElement((E) element);
                count++;
             }
         }
