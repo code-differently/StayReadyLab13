@@ -89,9 +89,4 @@ public class MyCollection <E> {
     public void setCapacity(int capacity) {
         this.capacity = capacity;
     }
-
-    public void setSize(int size) {
-        this.size = size;
-    }
-
 }
