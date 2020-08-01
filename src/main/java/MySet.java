@@ -1,5 +1,6 @@
 import java.util.Collection;
 
+//extending MyCollection because I want the functionality there but implementing Collection because this class specifically should be able to pass in Collection objects to some of its methods
 public class MySet <E> extends MyCollection<E> implements Collection<E> {
     public MySet() {
         super();
