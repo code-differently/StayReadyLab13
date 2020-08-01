@@ -31,15 +31,6 @@ public class MyArrayListTest{
     }
 
     @Test
-    public void sizeTest() {
-        int expectedSize = 3;
-
-        int actualSize = intArrListWithLength.size();
-
-        assertEquals(expectedSize, actualSize);
-    }
-
-    @Test
     public void addWithoutSpecifyingIndexTest() {
         int expectedValue = 24;
 
@@ -57,19 +48,6 @@ public class MyArrayListTest{
         int actualValue = (int) intArrListWithLength.get(2);
 
         assertEquals(expectedValue, actualValue);
-    }
-
-    @Test
-    public void addTillResizeTest() {
-        int expectedNewSize = 6;
-
-        intArrListWithLength.add(0, 5);
-        intArrListWithLength.add(1, 3);
-        intArrListWithLength.add(2, 4);
-        intArrListWithLength.add(3, 7);
-        int actualNewSize = intArrListWithLength.size();
-
-        assertEquals(expectedNewSize, actualNewSize);
     }
 
     @Test
@@ -91,24 +69,6 @@ public class MyArrayListTest{
         int actualReturnValue = (int) intArrListWithLength.get(0);
 
         assertEquals(expectedReturnValue, actualReturnValue);
-    }
-
-    @Test
-    public void clearTest() {
-        int expectedSize = 3;
-
-        intArrListWithLength.clear();
-        int actualSize = intArrListWithLength.size();
-
-        assertEquals(expectedSize, actualSize);
-    }
-
-    @Test
-    public void listIsEmptyTest() {
-
-        boolean actualValue = intArrListWithLength.isEmpty();
-
-        assertTrue(actualValue);
     }
 
     @Test
@@ -134,6 +94,19 @@ public class MyArrayListTest{
         boolean containsValue = intArrListWithLength.contains(5);
 
         assertFalse(containsValue);
+    }
+
+    @Test
+    public void addTillResizeTest() {
+        int expectedNewSize = 6;
+
+        intArrListWithLength.add(0, 12);
+        intArrListWithLength.add(1, 4);
+        intArrListWithLength.add(2, 7);
+        intArrListWithLength.add(3, 8);
+        int actualNewSize = intArrListWithLength.size();
+
+        assertEquals(expectedNewSize, actualNewSize);
     }
 
     @Test

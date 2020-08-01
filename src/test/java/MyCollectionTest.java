@@ -11,6 +11,33 @@ public class MyCollectionTest {
     }
 
     @Test
+    public void sizeTest() {
+        int expectedSize = 3;
+
+        int actualSize = collection.size();
+
+        assertEquals(expectedSize, actualSize);
+    }
+
+    @Test
+    public void listIsEmptyTest() {
+
+        boolean actualValue = collection.isEmpty();
+
+        assertTrue(actualValue);
+    }
+
+    @Test
+    public void clearTest() {
+        int expectedSize = 3;
+
+        collection.clear();
+        int actualSize = collection.size();
+
+        assertEquals(expectedSize, actualSize);
+    }
+
+    @Test
     public void getExpansiveArrayTest() {
         int expectedSize = 3;
 
