@@ -1,6 +1,8 @@
+import java.util.function.Predicate;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.ListIterator;
+import java.util.function.UnaryOperator;
 
 public class MyArrayList<T> {
     private Object[] array;
@@ -184,14 +186,17 @@ public class MyArrayList<T> {
         if(index < realSize){
             Object[] temp = new Object[array.length];
             Object removed = null;
+            int j = 0;
 
             for(int i = 0; i < realSize; i++){
                 if(i == index){
                     removed = array[i];
                     realSize--;
+                    j++;
                 }
-                else
-                    temp[i] = array[i];
+
+                temp[i] = array[j];
+                j++;
             }
 
             array = temp;
@@ -202,19 +207,82 @@ public class MyArrayList<T> {
     }
 
     public boolean remove(T element){
+
+        if(contains(element)){
+            Object[] temp = new Object[array.length];
+            int j = 0;
+
+            for(int i = 0; i < realSize; i++){
+                if(array[i] == element){
+                    remove(i);
+                    return true;
+                }
+            }
+        }
+
         return false;
     }
 
     public boolean removeAll(T[] elements){
-        return false;
+        boolean elementsRemoved = false;
+
+        for(int i = 0; i < elements.length; i++){
+            T elementToRemove = elements[i];
+
+            while(contains(elementToRemove)) {
+                remove(elementToRemove);
+                elementsRemoved = true;
+            }
+        }
+
+        return elementsRemoved;
     }
 
+    @SuppressWarnings("unchecked")
+    public void removeIf(Predicate<T> condition){
+
+        for(int i = 0; i < realSize;i++){
+            Object element = array[i];
+            if(condition.test((T) element)) {
+                remove(i);
+                i--;
+            }
+        }
+    }
+
+    @SuppressWarnings("unchecked")
     public void removeRange(int startIndex, int endIndex){
 
+        if(startIndex < realSize && endIndex < realSize){
+            for(int i = startIndex; i < endIndex; i++){
+                Object current = array[startIndex];
+                remove((T) current);
+            }
+        }
     }
 
+    public void replaceAll(UnaryOperator<T> operation){
+
+        for(int i = 0; i < realSize; i++){
+            array[i] = (operation.apply((T) array[i]));
+        }
+    }
+
+    @SuppressWarnings("unchecked")
     public void retainAll(T[] elements){
 
+        Object[] temp = new Object[array.length];
+
+        for(int i = 0; i < realSize; i++){
+
+            while(contains(elements[i])){
+                Object current = array[indexOf((T) elements[i])];
+                temp[i] = current;
+                remove((T) current);
+            }
+        }
+
+        array = temp;
     }
 
     public T set(int index, T element){

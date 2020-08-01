@@ -2,6 +2,9 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.util.function.Predicate;
+import java.util.function.UnaryOperator;
+
 public class MyArrayListTest {
 
     @Test
@@ -283,12 +286,35 @@ public class MyArrayListTest {
         al.add(2);
         al.add(3);
         al.add(4);
+        al.add(5);
 
-        al.remove(0);
-        Object[] actual = al.toArray();
-        Object[] expected = {3, 4};
+        int actual = al.remove(2);
+        int expected = 4;
 
-        Assert.assertArrayEquals(expected, actual);
+        Object[] actualA = al.toArray();
+        Object[] expectedA = {2, 3, 5};
+
+        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expectedA, actualA);
+    }
+
+    @Test
+    public void removeTest2(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+
+        int actual = al.remove(0);
+        int expected = 2;
+
+        Object[] actualA = al.toArray();
+        Object[] expectedA = {3, 4, 5};
+
+        Assert.assertEquals(expected, actual);
+        Assert.assertArrayEquals(expectedA, actualA);
+
     }
 
     @Test
@@ -316,7 +342,7 @@ public class MyArrayListTest {
     }
 
     @Test
-    public void removeAllTestTrue(){
+    public void removeAllTestTrue1(){
         MyArrayList<Integer> al = new MyArrayList<>();
         al.add(2);
         al.add(3);
@@ -324,7 +350,45 @@ public class MyArrayListTest {
 
         boolean actual = al.removeAll(new Integer[] {3, 4});
 
+        Object[] actualA = al.toArray();
+        Object[] expectedA = {2};
+
         Assert.assertTrue(actual);
+        Assert.assertArrayEquals(expectedA, actualA);
+    }
+
+    @Test
+    public void removeAllTestTrue2(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(2);
+        al.add(3);
+        al.add(4);
+
+        boolean actual = al.removeAll(new Integer[] {5, 4});
+
+        Object[] actualA = al.toArray();
+        Object[] expectedA = {2, 3};
+
+        Assert.assertTrue(actual);
+        Assert.assertArrayEquals(expectedA, actualA);
+    }
+
+    @Test
+    public void removeAllTestTrueDuplicates(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(4);
+        al.add(3);
+
+        boolean actual = al.removeAll(new Integer[] {3, 4});
+
+        Object[] actualA = al.toArray();
+        Object[] expectedA = {2};
+
+        Assert.assertTrue(actual);
+        Assert.assertArrayEquals(expectedA, actualA);
     }
 
     @Test
@@ -340,6 +404,24 @@ public class MyArrayListTest {
     }
 
     @Test
+    public void removeIfTest(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+
+        Predicate<Integer> lessThan = i -> (i <= 3);
+        al.removeIf(lessThan);
+
+        Object[] actual = al.toArray();
+        Object[] expected = {4, 5, 6};
+
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
     public void removeRangeTest(){
         MyArrayList<Integer> al = new MyArrayList<>();
         al.add(2);
@@ -349,7 +431,38 @@ public class MyArrayListTest {
 
         al.removeRange(1, 2);
         Object[] actual = al.toArray();
+        Object[] expected = {2, 4, 5};
+
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void removeRangeTest2(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+
+        al.removeRange(1, 3);
+        Object[] actual = al.toArray();
         Object[] expected = {2, 5};
+
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+    @Test
+    public void replaceAllTest(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(3);
+        al.add(4);
+        al.add(5);
+        al.add(6);
+
+        UnaryOperator<Integer> op = i -> (i - 2);
+        al.replaceAll(op);
+        Object[] actual = al.toArray();
+        Object[] expected = {1, 2, 3, 4};
 
         Assert.assertArrayEquals(expected, actual);
     }
@@ -363,9 +476,9 @@ public class MyArrayListTest {
         al.add(5);
         al.add(6);
 
-        al.retainAll(new Integer[] {3, 4, 5});
+        al.retainAll(new Integer[] {3, 5, 6});
         Object[] actual = al.toArray();
-        Object[] expected = {3, 4, 5};
+        Object[] expected = {3, 5, 6};
 
         Assert.assertArrayEquals(expected, actual);
     }
