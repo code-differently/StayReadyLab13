@@ -6,7 +6,7 @@ public class MyMapTest {
     MyMap<String, Integer> mapWithSize;
     @Before
     public void setup() {
-        mapWithSize = new MyMap<>(2);
+        mapWithSize = new MyMap<>();
     }
 
     @Test
@@ -29,4 +29,19 @@ public class MyMapTest {
 //        assertEquals(expectedSize, actualSize);
 //    }
 
+    @Test
+    public void isEmptyTest() {
+        assertTrue(mapWithSize.isEmpty());
+    }
+
+    @Test
+    public void putTest() {
+        mapWithSize.put("Square Enix", 12);
+        
+    }
+
+    @Test
+    public void containsKeyTest() {
+
+    }
 }

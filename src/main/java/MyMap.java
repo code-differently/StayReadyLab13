@@ -29,10 +29,16 @@ public class MyMap <K, V> {
         return keys.contains((K) element);
     }
 
-//    public void clear() {
-//        expansiveArray = new Object[size];
-//    }
-//
+    public void clear() {
+        keys.clear();
+        values.clear();
+    }
+
+    public void put(K key, V value) {
+        keys.add(key);
+        values.add(value);
+    }
+
 //    @SuppressWarnings("unchecked")
 //    public E remove(int index) {
 //        E elementAtIndex = (E) expansiveArray[index];
