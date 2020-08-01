@@ -59,7 +59,7 @@ public class MySet <E> extends MyCollection<E> implements Collection<E> {
 
     @SuppressWarnings("unchecked")
     @Override
-    public boolean containsAll(Collection<?> collection) {
+    public boolean containsAll(Collection collection) {
         boolean containsAllSuccessful = false;
         for(Object element: collection) {
             containsAllSuccessful = contains((E) element);
@@ -69,7 +69,7 @@ public class MySet <E> extends MyCollection<E> implements Collection<E> {
 
     @SuppressWarnings("unchecked")
     @Override
-    public boolean removeAll(Collection<?> collection) {
+    public boolean removeAll(Collection collection) {
         boolean removingAllSuccessful = false;
 
         for(Object element: collection) {
@@ -80,7 +80,7 @@ public class MySet <E> extends MyCollection<E> implements Collection<E> {
 
     @SuppressWarnings("unchecked")
     @Override
-    public boolean retainAll(Collection<?> collection) {
+    public boolean retainAll(Collection collection) {
         int count = 0;
         for(Object element: collection) {
             if(!contains((E) element)) {
