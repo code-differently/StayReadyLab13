@@ -38,6 +38,7 @@ public class MyCollection <E> {
 
     public void clear() {
         expansiveArray = new Object[size];
+        capacity = 0;
     }
 
     @SuppressWarnings("unchecked")

@@ -12,6 +12,8 @@ public class MyMap <K, V> {
     }
 
 //    public MyMap(MyMap<K, V> map) {
+          //set the keys of this object to the keys passed in
+          //do the same thing for the values
 //        keys = new MySet<>(size);
 //        values = new MySet<>(size);
 //    }
@@ -29,6 +31,11 @@ public class MyMap <K, V> {
         return keys.contains((K) element);
     }
 
+    @SuppressWarnings("unchecked")
+    public boolean containsValue(Object element) {
+        return values.contains((V) element);
+    }
+
     public void clear() {
         keys.clear();
         values.clear();
@@ -39,12 +46,25 @@ public class MyMap <K, V> {
         values.add(value);
     }
 
-//    @SuppressWarnings("unchecked")
-//    public E remove(int index) {
-//        E elementAtIndex = (E) expansiveArray[index];
-//        expansiveArray[index] = (E) new Object();
-//        return elementAtIndex;
-//    }
+    @SuppressWarnings("unchecked")
+    public V get(Object key) {
+        int indexOfKey = findElementIndex((K) key);
+        return values.getElementAtIndex(indexOfKey);
+    }
+
+    private int findElementIndex(K element) {
+        return Arrays.asList(keys.getExpansiveArray()).indexOf(element);
+    }
+
+    @SuppressWarnings("unchecked")
+    public V remove(Object key) {
+        K castedKey = (K) key;
+        int indexOfPair = findElementIndex(castedKey);
+        V value = values.getElementAtIndex(indexOfPair);
+        keys.removeElement(castedKey);
+        values.removeElement(value);
+        return value;
+    }
 //
 //    @SuppressWarnings("unchecked")
 //    public E removeElement(E element) {
@@ -62,31 +82,6 @@ public class MyMap <K, V> {
 //            }
 //        }
 //        return elementAtIndex;
-//    }
-//
-//    public Object[] getExpansiveArray() {
-//        return expansiveArray;
-//    }
-//
-//    public void setExpansiveArray(Object[] array) {
-//        expansiveArray = array;
-//    }
-//
-//    @SuppressWarnings("unchecked")
-//    public E getElementAtIndex(int index) {
-//        return (E) expansiveArray[index];
-//    }
-//
-//    public void setElementAtIndex(int index, E element) {
-//        expansiveArray[index] = element;
-//    }
-//
-//    public int getCapacity() {
-//        return capacity;
-//    }
-//
-//    public void setCapacity(int capacity) {
-//        this.capacity = capacity;
 //    }
 }
 
