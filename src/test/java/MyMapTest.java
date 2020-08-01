@@ -87,4 +87,15 @@ public class MyMapTest {
 
         assertEquals(expectedDate, actualDate);
     }
+
+    @Test
+    public void keySetTest() {
+        String expectedCompanyName = "Universal Pictures";
+
+        foundingDatesOfCompanies.put("Universal Pictures", 1912);
+        MySet <String> companies = foundingDatesOfCompanies.keySet();
+        String actualCompanyName = companies.getElementAtIndex(0);
+
+        assertEquals(expectedCompanyName, actualCompanyName);
+    }
 }

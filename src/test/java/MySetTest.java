@@ -77,17 +77,6 @@ public class MySetTest {
     }
 
     @Test
-    public void iteratorTest() {
-        int expectedValue = 1;
-
-        intSetWithLength.add(1);
-        Iterator<Integer> iterator = intSetWithLength.iterator();
-        int actualValue = iterator.next();
-
-        assertEquals(expectedValue, actualValue);
-    }
-
-    @Test
     public void toArrayTest() {
         assertNotNull(intSetWithLength.toArray());
     }

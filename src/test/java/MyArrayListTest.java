@@ -1,5 +1,8 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Iterator;
+
 import static org.junit.Assert.*;
 
 public class MyArrayListTest{
@@ -128,5 +131,16 @@ public class MyArrayListTest{
         int actualElement = intArrListWithLength.removeElement(2);
 
         assertEquals(expectedElement, actualElement);
+    }
+
+    @Test
+    public void iteratorTest() {
+        int expectedValue = 1;
+
+        intArrListWithLength.add(1);
+        Iterator<Integer> iterator = intArrListWithLength.iterator();
+        int actualValue = iterator.next();
+
+        assertEquals(expectedValue, actualValue);
     }
 }

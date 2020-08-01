@@ -11,12 +11,12 @@ public class MyMap <K, V> {
         values = new MySet<>();
     }
 
-//    public MyMap(MyMap<K, V> map) {
+    public MyMap(MyMap<K, V> map) {
           //set the keys of this object to the keys passed in
           //do the same thing for the values
-//        keys = new MySet<>(size);
-//        values = new MySet<>(size);
-//    }
+        keys = new MySet<>();
+        values = new MySet<>();
+    }
 
     public int size() {
         return keys.getCapacity(); //how many keys are stored, not the size, which would be 1
@@ -65,23 +65,9 @@ public class MyMap <K, V> {
         values.removeElement(value);
         return value;
     }
-//
-//    @SuppressWarnings("unchecked")
-//    public E removeElement(E element) {
-//        boolean elementExists = contains(element);
-//        E elementAtIndex = (E) new Object();
-//        if(elementExists) {
-//            int firstOccurrenceOfElement =
-//                    IntStream.range(0, expansiveArray.length)
-//                            .filter(i -> element ==  expansiveArray[i])
-//                            .findFirst() // first occurrence
-//                            .orElse(-1); // No element found
-//            if(firstOccurrenceOfElement != -1) {
-//                elementAtIndex = (E) expansiveArray[firstOccurrenceOfElement];
-//                remove(firstOccurrenceOfElement);
-//            }
-//        }
-//        return elementAtIndex;
-//    }
+
+    public MySet<K> keySet() {
+        return keys;
+    }
 }
 

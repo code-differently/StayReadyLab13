@@ -23,25 +23,6 @@ public class MySet <E> extends MyCollection<E>{
         return successful;
     }
 
-    public Iterator<E> iterator() {
-        return new Iterator<E>() {
-            private int index = 0;
-
-            @Override
-            public boolean hasNext() {
-                return size() > index;
-            }
-
-            @Override
-            @SuppressWarnings("unchecked")
-            public E next() {
-                E element = (E) getElementAtIndex(index);
-                index++;
-                return element;
-            }
-        };
-    }
-
     public Object[] toArray() {
         return getExpansiveArray();
     }

@@ -1,7 +1,9 @@
 import java.util.Arrays;
+import java.util.Iterator;
 import java.util.stream.IntStream;
 
-public class MyCollection <E> {
+//cannot create MyCollection, have to create subclasses
+public abstract class MyCollection <E> {
     private Object[] expansiveArray;
     private int capacity;
     private int size;
@@ -53,17 +55,20 @@ public class MyCollection <E> {
         boolean elementExists = contains(element);
         E elementAtIndex = (E) new Object();
         if(elementExists) {
-            int firstOccurrenceOfElement =
-                    IntStream.range(0, expansiveArray.length)
-                    .filter(i -> element ==  expansiveArray[i])
-                    .findFirst() // first occurrence
-                    .orElse(-1); // No element found
+            int firstOccurrenceOfElement = findFirstOccurrenceOfElement(element);
             if(firstOccurrenceOfElement != -1) {
                 elementAtIndex = (E) expansiveArray[firstOccurrenceOfElement];
                 remove(firstOccurrenceOfElement);
             }
         }
         return elementAtIndex;
+    }
+
+    private int findFirstOccurrenceOfElement(E element) {
+         return IntStream.range(0, expansiveArray.length)
+                .filter(i -> element ==  expansiveArray[i])
+                .findFirst() // first occurrence
+                .orElse(-1); // No element found
     }
 
     public Object[] getExpansiveArray() {
@@ -89,5 +94,24 @@ public class MyCollection <E> {
 
     public void setCapacity(int capacity) {
         this.capacity = capacity;
+    }
+
+    public Iterator<E> iterator() {
+        return new Iterator<E>() {
+            private int index = 0;
+
+            @Override
+            public boolean hasNext() {
+                return size() > index;
+            }
+
+            @Override
+            @SuppressWarnings("unchecked")
+            public E next() {
+                E element = (E) getElementAtIndex(index);
+                index++;
+                return element;
+            }
+        };
     }
 }

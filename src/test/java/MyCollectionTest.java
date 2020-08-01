@@ -1,20 +1,23 @@
 import org.junit.Before;
 import org.junit.Test;
+
+import java.util.Iterator;
+
 import static org.junit.Assert.*;
 
 public class MyCollectionTest {
-    MyCollection <String> collection;
+    MyCollection <String> arrList;
 
     @Before
     public void setup() {
-        collection = new MyCollection<String>(3);
+        arrList = new MyArrayList<String>(3);
     }
 
     @Test
     public void sizeTest() {
         int expectedSize = 3;
 
-        int actualSize = collection.size();
+        int actualSize = arrList.size();
 
         assertEquals(expectedSize, actualSize);
     }
@@ -22,7 +25,7 @@ public class MyCollectionTest {
     @Test
     public void listIsEmptyTest() {
 
-        boolean actualValue = collection.isEmpty();
+        boolean actualValue = arrList.isEmpty();
 
         assertTrue(actualValue);
     }
@@ -31,8 +34,8 @@ public class MyCollectionTest {
     public void clearTest() {
         int expectedSize = 3;
 
-        collection.clear();
-        int actualSize = collection.size();
+        arrList.clear();
+        int actualSize = arrList.size();
 
         assertEquals(expectedSize, actualSize);
     }
@@ -41,7 +44,7 @@ public class MyCollectionTest {
     public void getExpansiveArrayTest() {
         int expectedSize = 3;
 
-        Object[] arr = collection.getExpansiveArray();
+        Object[] arr = arrList.getExpansiveArray();
         int actualSize = arr.length;
 
         assertEquals(expectedSize, actualSize);
@@ -51,9 +54,9 @@ public class MyCollectionTest {
     public void setExpansiveArrayTest() {
         Object[] objectArr = new Object[1];
 
-        collection.setExpansiveArray(new Object[2]);
+        arrList.setExpansiveArray(new Object[2]);
 
-        assertNotEquals(objectArr, collection.getExpansiveArray());
+        assertNotEquals(objectArr, arrList.getExpansiveArray());
     }
 
     @Test
@@ -61,8 +64,8 @@ public class MyCollectionTest {
         String expected = "Peanut";
 
         //element will be null if I do not set it
-        collection.setElementAtIndex(1, "Peanut");
-        String actual = collection.getElementAtIndex(1);
+        arrList.setElementAtIndex(1, "Peanut");
+        String actual = arrList.getElementAtIndex(1);
 
         assertEquals(expected, actual);
     }
@@ -71,8 +74,8 @@ public class MyCollectionTest {
     public void setElementAtIndexTest() {
         String expected = "Bob";
 
-        collection.setElementAtIndex(0, "Bob");
-        String actual = collection.getElementAtIndex(0);
+        arrList.setElementAtIndex(0, "Bob");
+        String actual = arrList.getElementAtIndex(0);
 
         assertEquals(expected, actual);
     }
@@ -81,7 +84,7 @@ public class MyCollectionTest {
     public void getCapacityTest() {
         int expectedSize = 0;
 
-        int actualSize = collection.getCapacity();
+        int actualSize = arrList.getCapacity();
 
         assertEquals(expectedSize, actualSize);
     }
@@ -90,8 +93,8 @@ public class MyCollectionTest {
     public void setCapacityTest() {
         int expectedSize = 2;
 
-        collection.setCapacity(2);
-        int actualSize = collection.getCapacity();
+        arrList.setCapacity(2);
+        int actualSize = arrList.getCapacity();
 
         assertEquals(expectedSize, actualSize);
     }
