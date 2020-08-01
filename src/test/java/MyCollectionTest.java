@@ -7,12 +7,12 @@ public class MyCollectionTest {
 
     @Before
     public void setup() {
-        collection = new MyCollection<String>();
+        collection = new MyCollection<String>(3);
     }
 
     @Test
     public void getExpansiveArrayTest() {
-        int expectedSize = 1;
+        int expectedSize = 3;
 
         Object[] arr = collection.getExpansiveArray();
         int actualSize = arr.length;
@@ -22,11 +22,32 @@ public class MyCollectionTest {
 
     @Test
     public void setExpansiveArrayTest() {
-        int expectedSize = 0;
+        Object[] objectArr = new Object[1];
 
-        int actualSize = collection.size();
+        collection.setExpansiveArray(new Object[2]);
 
-        assertEquals(expectedSize, actualSize);
+        assertNotEquals(objectArr, collection.getExpansiveArray());
+    }
+
+    @Test
+    public void getElementAtIndexTest() {
+        String expected = "Peanut";
+
+        //element will be null if I do not set it
+        collection.setElementAtIndex(1, "Peanut");
+        String actual = collection.getElementAtIndex(1);
+
+        assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setElementAtIndexTest() {
+        String expected = "Bob";
+
+        collection.setElementAtIndex(0, "Bob");
+        String actual = collection.getElementAtIndex(0);
+
+        assertEquals(expected, actual);
     }
 
     @Test

@@ -23,7 +23,7 @@ public class MyCollection <E> {
         return expansiveArray.length;
     }
 
-    private void resize() {
+    protected void resize() {
         size = size * RESIZE_FACTOR;
         expansiveArray = Arrays.copyOf(expansiveArray, size);
     }
@@ -71,6 +71,11 @@ public class MyCollection <E> {
 
     public void setExpansiveArray(Object[] array) {
         expansiveArray = array;
+    }
+
+    @SuppressWarnings("unchecked")
+    public E getElementAtIndex(int index) {
+        return (E) expansiveArray[index];
     }
 
     public void setElementAtIndex(int index, E element) {
