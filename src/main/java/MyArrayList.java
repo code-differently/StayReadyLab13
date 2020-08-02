@@ -1,7 +1,5 @@
+import java.util.*;
 import java.util.function.Predicate;
-import java.util.Arrays;
-import java.util.Iterator;
-import java.util.ListIterator;
 import java.util.function.UnaryOperator;
 
 public class MyArrayList<T> {
@@ -210,7 +208,6 @@ public class MyArrayList<T> {
 
         if(contains(element)){
             Object[] temp = new Object[array.length];
-            int j = 0;
 
             for(int i = 0; i < realSize; i++){
                 if(array[i] == element){
@@ -272,25 +269,45 @@ public class MyArrayList<T> {
     public void retainAll(T[] elements){
 
         Object[] temp = new Object[array.length];
+        int j = 0;
+        int tempRealSize = 0;
 
-        for(int i = 0; i < realSize; i++){
+        for(int i = 0; i < elements.length; i++){
 
             while(contains(elements[i])){
                 Object current = array[indexOf((T) elements[i])];
-                temp[i] = current;
+                temp[j] = current;
+                tempRealSize++;
                 remove((T) current);
+                j++;
             }
         }
 
         array = temp;
+        realSize = tempRealSize;
     }
 
     public T set(int index, T element){
-        return null;
+        T newElement = null;
+
+        if(index < realSize){
+            array[index] = element;
+            newElement = element;
+        }
+
+        return element;
     }
 
     public int size(){
         return realSize;
+    }
+
+    public void sort(Comparator<T> comparator){
+
+    }
+
+    public Spliterator<T> spliterator(){
+        return null;
     }
 
     public T[] sublist(int startIndex, int endIndex){
@@ -304,11 +321,17 @@ public class MyArrayList<T> {
     }
 
     public T[] toArray(T[] elements){
-        return null;
+        return elements;
     }
 
     public void trimToSize(){
+        Object[] temp = new Object[realSize];
 
+        for(int i = 0; i < realSize; i++){
+            temp[i] = array[i];
+        }
+
+        array = temp;
     }
 
     private void resize(){ //resize by 10

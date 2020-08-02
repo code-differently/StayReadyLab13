@@ -468,17 +468,34 @@ public class MyArrayListTest {
     }
 
     @Test
-    public void retainAllTest(){
+    public void retainAllTest1(){
         MyArrayList<Integer> al = new MyArrayList<>();
         al.add(2);
         al.add(3);
         al.add(4);
         al.add(5);
         al.add(6);
+        al.add(3);
 
         al.retainAll(new Integer[] {3, 5, 6});
         Object[] actual = al.toArray();
-        Object[] expected = {3, 5, 6};
+        Object[] expected = {3, 3, 5, 6};
+
+        Assert.assertArrayEquals(expected, actual);
+    }
+
+
+    @Test
+    public void retainAllTest2(){
+        MyArrayList<Integer> al = new MyArrayList<>();
+        al.add(2);
+        al.add(3);
+        al.add(4);
+        al.add(5);
+
+        al.retainAll(new Integer[] {3, 5});
+        Object[] actual = al.toArray();
+        Object[] expected = {3, 5};
 
         Assert.assertArrayEquals(expected, actual);
     }
