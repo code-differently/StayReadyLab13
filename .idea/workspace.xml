@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="" />
+    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/MyArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1exDQNfOztURPyf6tfGTBIm2AuJ" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -21,7 +56,65 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+  </component>
+  <component name="RunManager" selected="JUnit.All in generics">
+    <configuration name="All in generics" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="TEST_OBJECT" value="package" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMapTest.removeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="METHOD_NAME" value="removeTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest.isEmptyTest2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="METHOD_NAME" value="isEmptyTest2" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.All in generics" />
+        <item itemvalue="JUnit.MyMapTest.removeTest" />
+        <item itemvalue="JUnit.MyMapTest" />
+        <item itemvalue="JUnit.MySetTest" />
+        <item itemvalue="JUnit.MySetTest.isEmptyTest2" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -34,10 +127,56 @@
       <option name="presentableId" value="Default" />
       <updated>1595254333495</updated>
       <workItem from="1595254339928" duration="19000" />
+      <workItem from="1596038859091" duration="17263000" />
+      <workItem from="1596126537009" duration="3871000" />
+      <workItem from="1596141496723" duration="12398000" />
+      <workItem from="1596386877314" duration="4841000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="888" y="287" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1596038954054">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="888" y="287" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1504.963@0.0.1504.963" timestamp="1596038954054" />
+    <state x="558" y="188" key="#com.intellij.ide.util.MemberChooser" timestamp="1596128483988">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="558" y="188" key="#com.intellij.ide.util.MemberChooser/0.0.1504.963@0.0.1504.963" timestamp="1596128483988" />
+    <state width="1461" height="255" key="GridCell.Tab.0.bottom" timestamp="1596391589438">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="255" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1596391589438" />
+    <state width="1461" height="255" key="GridCell.Tab.0.center" timestamp="1596391589438">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="255" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1596391589438" />
+    <state width="1461" height="255" key="GridCell.Tab.0.left" timestamp="1596391589438">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="255" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1596391589438" />
+    <state width="1461" height="255" key="GridCell.Tab.0.right" timestamp="1596391589438">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="1461" height="255" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1596391589438" />
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup" timestamp="1596236012880">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state x="415" y="206" width="672" height="678" key="search.everywhere.popup/0.0.1504.963@0.0.1504.963" timestamp="1596236012880" />
   </component>
 </project>
