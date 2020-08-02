@@ -32,6 +32,18 @@ public class MyMapTest {
     }
 
     @Test
+    public void putAllTest() {
+        int expectedSize = 1;
+        MyMap<String, Integer> newCompany = new MyMap<String, Integer>();
+        newCompany.put("Linkedin",  2002);
+
+        foundingDatesOfCompanies.putAll(newCompany);
+        int actualSize = foundingDatesOfCompanies.size();
+
+        assertEquals(expectedSize, actualSize);
+    }
+
+    @Test
     public void isEmptyTest() {
         assertTrue(foundingDatesOfCompanies.isEmpty());
     }

@@ -2,7 +2,7 @@ import java.util.Arrays;
 
 public class MyMap <K, V> {
     //the keys and the values will be synced up via indexes
-    //choose MySet because keys need to be unique
+    //chose MySet because keys need to be unique
     private MySet<K> keys;
     private MySet<V> values;
 
@@ -12,10 +12,14 @@ public class MyMap <K, V> {
     }
 
     public MyMap(MyMap<K, V> map) {
-        MySet<K> incomingKeys = map.keySet();
-        MySet<V> incomingValues = map.values();
         keys = new MySet<>();
         values = new MySet<>();
+        putAll(map);
+    }
+
+    public void putAll(MyMap<K, V> map) {
+        MySet<K> incomingKeys = map.keySet();
+        MySet<V> incomingValues = map.values();
         keys.addAll(incomingKeys);
         values.addAll(incomingValues);
     }
