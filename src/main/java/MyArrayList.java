@@ -1,6 +1,5 @@
 import java.util.Arrays;
 import java.util.Collection;
-import java.util.Iterator;
 
 public class MyArrayList<T> {
     private int lastIndex;
@@ -17,6 +16,8 @@ public class MyArrayList<T> {
         if (size < 0)
             throw new IllegalArgumentException("Illegal Capacity: " + size);
         this.arr = (T[]) new Object[size];
+        T empty = (T) new Object();
+        //Arrays.fill(arr, empty);
         this.lastIndex = size - 1;
     }
 
