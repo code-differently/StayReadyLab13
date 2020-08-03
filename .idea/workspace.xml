@@ -1,11 +1,44 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="" />
+    <list default="true" id="c6113214-f82f-4e72-800f-d142eb38c44b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyArrayList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MyMap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/MySet.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyArrayListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MyMapTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/MySetTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -23,6 +56,42 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
   </component>
+  <component name="RunManager" selected="JUnit.MyMapTest">
+    <configuration name="MyArrayListTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyArrayListTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MyMapTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MyMapTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MySetTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="generics" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="MySetTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.MyMapTest" />
+        <item itemvalue="JUnit.MyArrayListTest" />
+        <item itemvalue="JUnit.MySetTest" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -39,5 +108,43 @@
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="532" y="155" key="#com.intellij.ide.util.MemberChooser" timestamp="1596042495955">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="532" y="155" key="#com.intellij.ide.util.MemberChooser/0.23.1440.816@0.23.1440.816" timestamp="1596042495955" />
+    <state width="1358" height="198" key="GridCell.Tab.0.bottom" timestamp="1596497463824">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.bottom/0.23.1440.816@0.23.1440.816" timestamp="1596497463824" />
+    <state width="1358" height="198" key="GridCell.Tab.0.center" timestamp="1596497463820">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.center/0.23.1440.816@0.23.1440.816" timestamp="1596497463820" />
+    <state width="1358" height="198" key="GridCell.Tab.0.left" timestamp="1596497463817">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.left/0.23.1440.816@0.23.1440.816" timestamp="1596497463817" />
+    <state width="1358" height="198" key="GridCell.Tab.0.right" timestamp="1596497463822">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state width="1358" height="198" key="GridCell.Tab.0.right/0.23.1440.816@0.23.1440.816" timestamp="1596497463822" />
+    <state x="257" y="94" key="Maven.ArtifactSearchDialog" timestamp="1596041821380">
+      <screen x="0" y="23" width="1440" height="816" />
+    </state>
+    <state x="257" y="94" key="Maven.ArtifactSearchDialog/0.23.1440.816@0.23.1440.816" timestamp="1596041821380" />
   </component>
 </project>
